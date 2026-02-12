@@ -1,0 +1,7 @@
+CAMERA,543,CAM-FrontDoor,true,12
+THERMOSTAT,895,THERMO-LivingRoom,true,22.5,24.0
+LIGHT,669,LIGHT-Kitchen,true,100
+LIGHT,112,LIGHT-Garden,false,30
+CAMERA,846,CAM-Backyard,true,8
+THERMOSTAT,888,THERMO-Bedroom,false,18.0,20.0
+LIGHT,211,LIGHT-Reading,true,45

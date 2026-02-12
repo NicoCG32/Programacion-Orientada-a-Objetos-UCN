@@ -1,0 +1,18 @@
+En el hemisferio norte hay: 
+Brachiosaurus: 230
+TRex: 212
+Triceratops: 249
+Velociraptor: 449
+
+En el hemisferio sur hay: 
+Brachiosaurus: 209
+TRex: 208
+Triceratops: 251
+Velociraptor: 450
+
+El más pesado es: 4F-E2-23-05-D5-C5 (80332 kg)
+El más alto es: A9-1E-13-CA-B7-15 (27.56 m)
+El más rápido es: 8C-43-B5-D0-6F-ED (67 km/h)
+
+El dinosario mejor adaptado es: 
+Brachiosaurus [EB-81-BB-00-FC-78]

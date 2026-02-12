@@ -1,0 +1,8 @@
+5
+C,4
+S
+S
+C,3
+C,1
+PREMIUM:ximena,NORMAL:pedro,NORMAL:juan,NORMAL:paula,NORMAL:diego,PREMIUM:katy,PREMIUM:klaus
+20000

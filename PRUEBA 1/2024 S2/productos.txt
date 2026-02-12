@@ -1,0 +1,20 @@
+001,Porotos,1,50
+002,Lentejas,1,100
+003,Tallarines,1,60
+004,Zapallo,1,40
+005,Carne Molida,1,25
+006,Lechuga,1,160
+007,Papas,1,100
+008,Leche,1,30
+009,Huevos,1,50
+010,Mantequilla,1,20
+011,Arroz,1,70
+012,Zanahoria,1,45
+013,Pollo,1,35
+014,Cebolla,1,55
+015,Ajo,1,20
+016,Tomate,1,65
+017,Pimiento,1,40
+018,Choclo,1,60
+019,Queso Rallado,1,20
+020,Atún,1,25

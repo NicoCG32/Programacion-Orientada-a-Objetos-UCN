@@ -1,0 +1,43 @@
+Lentejas con Arroz,Fondo,4
+Lentejas,10
+Arroz,5
+Zapallo,2
+Carne Molida,2
+
+Puré,Fondo,3
+Papas,20
+Leche,10
+Mantequilla,2
+
+Tallarines con Salsa,Fondo,3
+Tallarines,15
+Tomate,10
+Queso Rallado,5
+
+Pollo al Horno,Fondo,4
+Pollo,20
+Papas,15
+Zanahoria,5
+Cebolla,3
+
+Ensalada Mixta,Ensalada,3
+Lechuga,30
+Tomate,20
+Pimiento,10
+
+Sopa de Verduras,Fondo,4
+Zanahoria,10
+Cebolla,5
+Pimiento,5
+Ajo,2
+
+Pizza de Atún,Fondo,3
+Atún,10
+Tomate,10
+Queso Rallado,5
+
+Arroz con Pollo,Fondo,4
+Arroz,15
+Pollo,10
+Zanahoria,5
+Cebolla,3

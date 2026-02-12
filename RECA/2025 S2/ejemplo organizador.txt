@@ -1,0 +1,565 @@
+-------------------------------------------------
+-------- PRIORIZANDO POR DEPORTE PRIMERO --------
+-------------------------------------------------
+Lunes
+00: dep-RunningSuave-Baja
+01: dep-GymFuerza-Alta
+02: dep-RunningTecnica-Media
+03: dep-FutbolAmistoso-Media
+04: dep-GymCore-Baja
+05: dep-RunningIntervalos-Alta
+06: dep-GymMovilidad-Baja
+07: lab-DesarrolloBackend-Casa
+08: lab-EntrenamientoML-Casa
+09: lab-ModeladoDatos-Casa
+10: lab-DesarrolloFrontend-Casa
+11: lab-TestingSoftware-Casa
+12: lab-OptimizaciónModeloML-Casa
+13: des
+14: des
+15: des
+16: des
+17: des
+18: des
+19: des
+20: des
+21: des
+22: des
+23: des
+
+Martes
+00: dep-RunningSuave-Baja
+01: dep-GymCardio-Media
+02: dep-RunningTempo-Media
+03: dep-FutbolEntrenamiento-Media
+04: dep-GymFuerza-Alta
+05: dep-RunningLargo-Media
+06: dep-RunningLargo-Media
+07: dep-GymCore-Baja
+08: lab-EntrenamientoRedesNeuronales-Casa
+09: lab-AnálisisDatos-Casa
+10: lab-AnálisisDatos-Casa
+11: lab-ImplementaciónAPI-Casa
+12: lab-AjusteHiperparámetros-Casa
+13: lab-DocumentaciónSoftware-Casa
+14: des
+15: des
+16: des
+17: des
+18: des
+19: des
+20: des
+21: des
+22: des
+23: des
+
+Miércoles
+00: dep-GymFuncional-Media
+01: dep-GymFuncional-Media
+02: dep-RunningSuave-Baja
+03: dep-RunningTecnica-Media
+04: dep-FutbolPartido-Alta
+05: dep-GymFuerza-Alta
+06: dep-RunningIntervalos-Alta
+07: lab-DesarrolloMicroservicios-Casa
+08: lab-PreprocesamientoDatos-Casa
+09: lab-EntrenamientoModeloML-Casa
+10: lab-EvaluaciónModelo-Casa
+11: lab-OptimizaciónCódigo-Casa
+12: des
+13: des
+14: des
+15: des
+16: des
+17: des
+18: des
+19: des
+20: des
+21: des
+22: des
+23: des
+
+Jueves
+00: dep-RunningSuave-Baja
+01: dep-RunningIntervalos-Alta
+02: dep-GymCardio-Media
+03: dep-GymCardio-Media
+04: dep-FutbolTáctico-Media
+05: dep-GymMovilidad-Baja
+06: dep-RunningSuave-Baja
+07: dep-GymCore-Baja
+08: lab-IntegraciónContinua-Oficina
+09: lab-AnálisisExploratorio-Casa
+10: lab-DespliegueProducción-Oficina
+11: lab-MonitoreoModelosML-Oficina
+12: lab-RefactorizaciónCódigo-Casa
+13: des
+14: des
+15: des
+16: des
+17: des
+18: des
+19: des
+20: des
+21: des
+22: des
+23: des
+
+Viernes
+00: dep-GymFuerza-Alta
+01: dep-RunningSuave-Baja
+02: dep-RunningTempo-Media
+03: dep-GymFuncional-Media
+04: dep-FutbolRecreativo-Media
+05: dep-GymCore-Baja
+06: dep-GymFuncional-Media
+07: dep-RunningLargo-Media
+08: lab-PlanificaciónSprint-Oficina
+09: lab-EntrenamientoMLAvanzado-Casa
+10: lab-RevisiónCódigo-Oficina
+11: lab-AnálisisResultadosML-Casa
+12: lab-CierreSprint-Oficina
+13: des
+14: des
+15: des
+16: des
+17: des
+18: des
+19: des
+20: des
+21: des
+22: des
+23: des
+
+Sábado
+00: dep-RunningLargo-Media
+01: dep-GymMovilidad-Baja
+02: dep-GymFuerza-Alta
+03: dep-FutbolAmistoso-Media
+04: dep-GymCore-Baja
+05: dep-RunningSuave-Baja
+06: dep-GymFuncional-Media
+07: lab-ProyectoPersonalSoftware-Casa
+08: lab-ExperimentaciónML-Casa
+09: lab-LecturaPapersML-Casa
+10: lab-AjusteModelosPersonales-Casa
+11: lab-RefactorProyectoPersonal-Casa
+12: des
+13: des
+14: des
+15: des
+16: des
+17: des
+18: des
+19: des
+20: des
+21: des
+22: des
+23: des
+
+Domingo
+00: dep-RunningRecuperativo-Baja
+01: dep-GymMovilidad-Baja
+02: dep-FutbolRecreativo-Media
+03: dep-GymCore-Baja
+04: dep-RunningSuave-Baja
+05: dep-GymFuncional-Media
+06: lab-RevisiónCódigoPersonal-Casa
+07: lab-PlanificaciónAprendizajeML-Casa
+08: lab-DocumentaciónProyectoPersonal-Casa
+09: lab-AnálisisResultadosPersonales-Casa
+10: des
+11: des
+12: des
+13: des
+14: des
+15: des
+16: des
+17: des
+18: des
+19: des
+20: des
+21: des
+22: des
+23: des
+
+-------------------------------------------------
+-------- PRIORIZANDO POR NOCTURNO --------
+-------------------------------------------------
+Lunes
+00: dep-RunningSuave-Baja
+01: dep-GymFuerza-Alta
+02: dep-RunningTecnica-Media
+03: dep-FutbolAmistoso-Media
+04: dep-GymCore-Baja
+05: dep-RunningIntervalos-Alta
+06: dep-GymMovilidad-Baja
+07: des
+08: des
+09: des
+10: des
+11: des
+12: des
+13: des
+14: des
+15: des
+16: des
+17: des
+18: lab-DesarrolloBackend-Casa
+19: lab-EntrenamientoML-Casa
+20: lab-ModeladoDatos-Casa
+21: lab-DesarrolloFrontend-Casa
+22: lab-TestingSoftware-Casa
+23: lab-OptimizaciónModeloML-Casa
+
+Martes
+00: dep-RunningSuave-Baja
+01: dep-GymCardio-Media
+02: dep-RunningTempo-Media
+03: dep-FutbolEntrenamiento-Media
+04: dep-GymFuerza-Alta
+05: dep-RunningLargo-Media
+06: dep-RunningLargo-Media
+07: dep-GymCore-Baja
+08: des
+09: des
+10: des
+11: des
+12: des
+13: des
+14: des
+15: des
+16: des
+17: des
+18: lab-EntrenamientoRedesNeuronales-Casa
+19: lab-AnálisisDatos-Casa
+20: lab-AnálisisDatos-Casa
+21: lab-ImplementaciónAPI-Casa
+22: lab-AjusteHiperparámetros-Casa
+23: lab-DocumentaciónSoftware-Casa
+
+Miércoles
+00: dep-GymFuncional-Media
+01: dep-GymFuncional-Media
+02: dep-RunningSuave-Baja
+03: dep-RunningTecnica-Media
+04: dep-FutbolPartido-Alta
+05: dep-GymFuerza-Alta
+06: dep-RunningIntervalos-Alta
+07: des
+08: des
+09: des
+10: des
+11: des
+12: des
+13: des
+14: des
+15: des
+16: des
+17: des
+18: des
+19: lab-DesarrolloMicroservicios-Casa
+20: lab-PreprocesamientoDatos-Casa
+21: lab-EntrenamientoModeloML-Casa
+22: lab-EvaluaciónModelo-Casa
+23: lab-OptimizaciónCódigo-Casa
+
+Jueves
+00: dep-RunningSuave-Baja
+01: dep-RunningIntervalos-Alta
+02: dep-GymCardio-Media
+03: dep-GymCardio-Media
+04: dep-FutbolTáctico-Media
+05: dep-GymMovilidad-Baja
+06: dep-RunningSuave-Baja
+07: dep-GymCore-Baja
+08: des
+09: des
+10: des
+11: des
+12: des
+13: des
+14: des
+15: des
+16: des
+17: des
+18: des
+19: lab-IntegraciónContinua-Oficina
+20: lab-AnálisisExploratorio-Casa
+21: lab-DespliegueProducción-Oficina
+22: lab-MonitoreoModelosML-Oficina
+23: lab-RefactorizaciónCódigo-Casa
+
+Viernes
+00: dep-GymFuerza-Alta
+01: dep-RunningSuave-Baja
+02: dep-RunningTempo-Media
+03: dep-GymFuncional-Media
+04: dep-FutbolRecreativo-Media
+05: dep-GymCore-Baja
+06: dep-GymFuncional-Media
+07: dep-RunningLargo-Media
+08: des
+09: des
+10: des
+11: des
+12: des
+13: des
+14: des
+15: des
+16: des
+17: des
+18: des
+19: lab-PlanificaciónSprint-Oficina
+20: lab-EntrenamientoMLAvanzado-Casa
+21: lab-RevisiónCódigo-Oficina
+22: lab-AnálisisResultadosML-Casa
+23: lab-CierreSprint-Oficina
+
+Sábado
+00: dep-RunningLargo-Media
+01: dep-GymMovilidad-Baja
+02: dep-GymFuerza-Alta
+03: dep-FutbolAmistoso-Media
+04: dep-GymCore-Baja
+05: dep-RunningSuave-Baja
+06: dep-GymFuncional-Media
+07: des
+08: des
+09: des
+10: des
+11: des
+12: des
+13: des
+14: des
+15: des
+16: des
+17: des
+18: des
+19: lab-ProyectoPersonalSoftware-Casa
+20: lab-ExperimentaciónML-Casa
+21: lab-LecturaPapersML-Casa
+22: lab-AjusteModelosPersonales-Casa
+23: lab-RefactorProyectoPersonal-Casa
+
+Domingo
+00: dep-RunningRecuperativo-Baja
+01: dep-GymMovilidad-Baja
+02: dep-FutbolRecreativo-Media
+03: dep-GymCore-Baja
+04: dep-RunningSuave-Baja
+05: dep-GymFuncional-Media
+06: des
+07: des
+08: des
+09: des
+10: des
+11: des
+12: des
+13: des
+14: des
+15: des
+16: des
+17: des
+18: des
+19: des
+20: lab-RevisiónCódigoPersonal-Casa
+21: lab-PlanificaciónAprendizajeML-Casa
+22: lab-DocumentaciónProyectoPersonal-Casa
+23: lab-AnálisisResultadosPersonales-Casa
+
+-------------------------------------------------
+-------- PRIORIZANDO POR SHUFFLE --------
+-------------------------------------------------
+Lunes
+00: dep-GymFuerza-Alta
+01: lab-DesarrolloFrontend-Casa
+02: dep-GymCore-Baja
+03: lab-DesarrolloBackend-Casa
+04: dep-FutbolAmistoso-Media
+05: lab-EntrenamientoML-Casa
+06: des
+07: lab-OptimizaciónModeloML-Casa
+08: des
+09: dep-RunningIntervalos-Alta
+10: des
+11: des
+12: lab-TestingSoftware-Casa
+13: lab-ModeladoDatos-Casa
+14: des
+15: dep-GymMovilidad-Baja
+16: des
+17: des
+18: des
+19: dep-RunningSuave-Baja
+20: des
+21: des
+22: des
+23: dep-RunningTecnica-Media
+
+Martes
+00: dep-RunningSuave-Baja
+01: lab-EntrenamientoRedesNeuronales-Casa
+02: dep-RunningLargo-Media
+03: des
+04: des
+05: dep-GymCardio-Media
+06: des
+07: dep-FutbolEntrenamiento-Media
+08: des
+09: lab-DocumentaciónSoftware-Casa
+10: dep-RunningTempo-Media
+11: lab-AnálisisDatos-Casa
+12: des
+13: des
+14: des
+15: dep-GymCore-Baja
+16: dep-RunningLargo-Media
+17: lab-AnálisisDatos-Casa
+18: lab-AjusteHiperparámetros-Casa
+19: lab-ImplementaciónAPI-Casa
+20: dep-GymFuerza-Alta
+21: des
+22: des
+23: des
+
+Miércoles
+00: des
+01: dep-RunningIntervalos-Alta
+02: des
+03: dep-FutbolPartido-Alta
+04: lab-PreprocesamientoDatos-Casa
+05: dep-GymFuerza-Alta
+06: dep-RunningTecnica-Media
+07: des
+08: des
+09: des
+10: lab-DesarrolloMicroservicios-Casa
+11: lab-EvaluaciónModelo-Casa
+12: lab-EntrenamientoModeloML-Casa
+13: des
+14: des
+15: dep-GymFuncional-Media
+16: des
+17: des
+18: des
+19: dep-RunningSuave-Baja
+20: lab-OptimizaciónCódigo-Casa
+21: des
+22: dep-GymFuncional-Media
+23: des
+
+Jueves
+00: dep-FutbolTáctico-Media
+01: des
+02: des
+03: des
+04: lab-MonitoreoModelosML-Oficina
+05: des
+06: des
+07: lab-IntegraciónContinua-Oficina
+08: des
+09: lab-RefactorizaciónCódigo-Casa
+10: des
+11: dep-GymMovilidad-Baja
+12: lab-DespliegueProducción-Oficina
+13: dep-RunningIntervalos-Alta
+14: dep-RunningSuave-Baja
+15: dep-GymCore-Baja
+16: dep-GymCardio-Media
+17: des
+18: des
+19: des
+20: dep-RunningSuave-Baja
+21: des
+22: lab-AnálisisExploratorio-Casa
+23: dep-GymCardio-Media
+
+Viernes
+00: lab-CierreSprint-Oficina
+01: dep-FutbolRecreativo-Media
+02: dep-GymCore-Baja
+03: lab-AnálisisResultadosML-Casa
+04: dep-GymFuncional-Media
+05: des
+06: des
+07: des
+08: des
+09: des
+10: dep-RunningLargo-Media
+11: des
+12: des
+13: des
+14: des
+15: lab-RevisiónCódigo-Oficina
+16: dep-RunningSuave-Baja
+17: dep-GymFuncional-Media
+18: lab-EntrenamientoMLAvanzado-Casa
+19: des
+20: lab-PlanificaciónSprint-Oficina
+21: des
+22: dep-GymFuerza-Alta
+23: dep-RunningTempo-Media
+
+Sábado
+00: lab-ProyectoPersonalSoftware-Casa
+01: des
+02: des
+03: dep-GymFuerza-Alta
+04: des
+05: dep-GymFuncional-Media
+06: lab-LecturaPapersML-Casa
+07: dep-GymCore-Baja
+08: lab-AjusteModelosPersonales-Casa
+09: des
+10: dep-RunningLargo-Media
+11: des
+12: dep-FutbolAmistoso-Media
+13: des
+14: dep-GymMovilidad-Baja
+15: lab-ExperimentaciónML-Casa
+16: des
+17: des
+18: dep-RunningSuave-Baja
+19: des
+20: des
+21: lab-RefactorProyectoPersonal-Casa
+22: des
+23: des
+
+Domingo
+00: des
+01: dep-GymMovilidad-Baja
+02: dep-RunningRecuperativo-Baja
+03: lab-DocumentaciónProyectoPersonal-Casa
+04: des
+05: dep-FutbolRecreativo-Media
+06: dep-GymCore-Baja
+07: des
+08: des
+09: des
+10: des
+11: des
+12: des
+13: des
+14: des
+15: dep-GymFuncional-Media
+16: des
+17: des
+18: des
+19: lab-RevisiónCódigoPersonal-Casa
+20: lab-AnálisisResultadosPersonales-Casa
+21: des
+22: lab-PlanificaciónAprendizajeML-Casa
+23: dep-RunningSuave-Baja
+
+=== REPORTE SEMANAL ===
+Deportivas:
+  Alta:  9
+  Media: 23
+  Baja:  19
+Laborales:
+  Oficina: 6
+  Casa:    30
+Descanso:
+  Horas: 81

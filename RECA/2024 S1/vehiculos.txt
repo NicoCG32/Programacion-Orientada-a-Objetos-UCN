@@ -1,0 +1,6 @@
+1111,JUAN,XY12345,auto,modelo1,9
+1111,JUAN,ZZZ33,moto,modelo2,500
+2222,XIMENA,AUX3993,camion,modelo3,1540.44
+2222,XIMENA,AG221,moto,modelo4,250
+3333,FRAN,LP12,moto,modelo5,300
+3333,FRAN,QWERTY33,auto,modelo6,5

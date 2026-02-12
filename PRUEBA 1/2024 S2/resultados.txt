@@ -1,0 +1,38 @@
+Ejemplo de ejecución: puede no resultar igual con el archivo de ejemplo, ya que sólo sería un ejemplo de formato.
+
+—----------
+
+Días cubiertos con menús exitosos:
+Se pudo preparar: Lentejas con Arroz y Ensalada Mixta
+Se pudo preparar: Puré y Ensalada Mixta
+Se pudo preparar: Pollo al Horno y Ensalada Mixta
+Se pudo preparar: Sopa de Verduras y Ensalada Mixta
+Se pudo preparar: Pizza de Atún y Ensalada Mixta
+
+Se cubrieron los 5 días con éxito.
+
+Recetas que no se pudieron preparar:
+No se pudo preparar: Tallarines con Salsa o Ensalada Mixta
+No se pudo preparar: Arroz con Pollo o Ensalada Mixta
+
+Ingredientes restantes en la bodega:
+Porotos: 50 kg
+Lentejas: 90 kg
+Tallarines: 45 kg
+Zapallo: 38 kg
+Carne Molida: 23 kg
+Lechuga: 10 kg
+Papas: 65 kg
+Leche: 10 kg
+Huevos: 50 kg
+Mantequilla: 16 kg
+Arroz: 65 kg
+Zanahoria: 20 kg
+Pollo: 5 kg
+Cebolla: 47 kg
+Ajo: 18 kg
+Tomate: 35 kg
+Pimiento: 25 kg
+Choclo: 60 kg
+Queso Rallado: 5 kg
+Atún: 15 kg

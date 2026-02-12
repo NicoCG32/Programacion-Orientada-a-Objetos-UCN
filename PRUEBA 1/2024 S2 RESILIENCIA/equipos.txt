@@ -1,0 +1,10 @@
+1,Real Madrid,España
+2,Liverpool,Inglaterra
+3,Boca Juniors,Argentina
+4,Barcelona,España
+5,Manchester United,Inglaterra
+6,Bayern Munich,Alemania
+7,Juventus,Italia
+8,PSG,Francia
+9,Inter de Milán,Italia
+10,Ajax,Países Bajos

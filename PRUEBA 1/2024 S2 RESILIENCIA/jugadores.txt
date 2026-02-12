@@ -1,0 +1,110 @@
+Sergio Ramos,4,1,80,85,70,90,60
+Karim Benzema,9,1,75,80,85,65,85
+Luka Modric,10,1,70,75,80,85,70
+Toni Kroos,8,1,65,85,80,75,80
+Thibaut Courtois,1,1,60,90,85,90,50
+Eden Hazard,7,1,85,70,80,60,85
+Marcelo,12,1,75,65,70,80,65
+Casemiro,14,1,70,85,75,85,65
+Vinícius Júnior,20,1,90,60,75,50,80
+Nacho,6,1,60,75,70,85,55
+Isco,22,1,75,65,70,55,80
+Mohamed Salah,11,2,95,90,85,70,95
+Sadio Mané,10,2,85,85,90,65,85
+Virgil van Dijk,4,2,65,90,70,95,50
+Alisson Becker,1,2,55,85,80,85,45
+Roberto Firmino,9,2,80,75,85,60,85
+Jordan Henderson,14,2,65,80,75,85,60
+Trent Alexander-Arnold,66,2,85,70,75,80,65
+Andrew Robertson,26,2,70,85,80,70,65
+Fabinho,3,2,75,85,75,85,65
+Joe Gomez,12,2,65,70,75,80,60
+Naby Keïta,8,2,70,65,70,75,75
+Carlos Tevez,10,3,85,80,80,75,90
+Franco Soldano,9,3,70,75,80,65,80
+Eduardo Salvio,11,3,80,70,75,60,85
+Lisandro López,2,3,60,85,75,90,55
+Esteban Andrada,1,3,50,85,85,85,45
+Carlos Izquierdoz,4,3,65,85,75,85,55
+Emmanuel Mas,3,3,70,80,70,80,50
+Jorman Campuzano,21,3,60,75,70,70,60
+Frank Fabra,18,3,70,70,75,65,65
+Sebastián Villa,22,3,85,65,70,55,85
+Julio Buffarini,7,3,75,65,75,85,55
+Lionel Messi,10,4,95,85,90,70,95
+Antoine Griezmann,7,4,85,75,85,65,80
+Gerard Piqué,3,4,60,85,70,90,50
+Marc-André ter Stegen,1,4,55,90,80,85,45
+Sergio Busquets,5,4,65,85,80,85,55
+Frenkie de Jong,21,4,70,80,75,80,65
+Jordi Alba,18,4,85,70,75,85,65
+Ousmane Dembélé,11,4,85,65,75,55,85
+Clement Lenglet,15,4,60,80,70,85,55
+Samuel Umtiti,23,4,55,75,75,85,50
+Miralem Pjanic,8,4,70,65,70,75,75
+Bruno Fernandes,18,5,85,80,90,75,85
+Marcus Rashford,10,5,90,75,85,65,85
+Harry Maguire,5,5,60,85,70,90,55
+David de Gea,1,5,50,90,85,85,45
+Paul Pogba,6,5,70,85,80,80,65
+Mason Greenwood,11,5,85,70,75,60,80
+Luke Shaw,23,5,70,85,80,70,65
+Fred,17,5,75,80,75,75,60
+Scott McTominay,39,5,65,75,70,85,60
+Victor Lindelöf,2,5,65,70,70,85,55
+Aaron Wan-Bissaka,29,5,75,75,75,85,60
+Robert Lewandowski,9,6,90,85,85,80,95
+Joshua Kimmich,6,6,85,80,80,85,70
+Leon Goretzka,8,6,80,75,85,80,75
+Manuel Neuer,1,6,55,90,85,90,45
+Alphonso Davies,19,6,95,65,75,70,75
+Thomas Müller,25,6,80,80,75,75,80
+Kingsley Coman,29,6,85,70,80,60,85
+Serge Gnabry,7,6,85,75,80,65,85
+Niklas Süle,4,6,60,85,70,90,55
+Lucas Hernández,21,6,70,80,75,85,60
+David Alaba,27,6,75,80,75,85,65
+Cristiano Ronaldo,7,7,90,85,85,75,95
+Paulo Dybala,10,7,85,75,85,65,85
+Giorgio Chiellini,3,7,60,85,70,90,50
+Wojciech Szczęsny,1,7,55,90,80,85,45
+Leonardo Bonucci,19,7,65,85,80,85,55
+Juan Cuadrado,16,7,85,70,80,80,65
+Adrien Rabiot,25,7,75,80,75,75,60
+Rodrigo Bentancur,30,7,65,70,75,80,60
+Matthijs de Ligt,4,7,70,85,75,85,65
+Aaron Ramsey,8,7,65,75,75,80,60
+Danilo,13,7,70,75,70,85,55
+Kylian Mbappé,7,8,95,85,85,70,90
+Neymar Jr,10,8,90,80,85,65,85
+Angel Di Maria,11,8,85,75,80,70,80
+Keylor Navas,1,8,55,85,85,90,45
+Marquinhos,5,8,65,90,75,90,55
+Presnel Kimpembe,3,8,60,85,75,85,50
+Idrissa Gueye,27,8,70,85,75,75,65
+Marco Verratti,6,8,75,85,80,75,60
+Mauro Icardi,9,8,85,70,80,60,85
+Layvin Kurzawa,20,8,70,80,75,70,60
+Leandro Paredes,8,8,65,80,70,75,65
+Edinson Cavani,21,5,80,70,85,65,85
+Alex Telles,27,5,70,75,75,80,65
+Thiago Alcantara,6,2,85,80,80,75,70
+Divock Origi,27,2,70,70,75,65,80
+Jérôme Boateng,17,6,60,85,70,85,55
+Thomas Partey,18,6,70,80,75,80,65
+Federico Chiesa,22,7,85,75,80,65,80
+Alvaro Morata,9,7,75,80,80,60,85
+Marco Verratti,6,8,85,85,80,75,75
+Sergio Rico,16,8,55,75,75,85,50
+Danilo Pereira,15,8,70,80,75,75,65
+André Onana,24,9,60,85,80,85,55
+Romelu Lukaku,9,9,85,75,80,70,85
+Christian Eriksen,10,9,80,85,85,75,80
+Milan Skriniar,37,9,60,85,75,85,55
+Stefan de Vrij,6,9,65,80,75,85,60
+Dusan Tadic,10,10,80,85,85,70,80
+Sebastien Haller,22,10,85,80,85,65,85
+Daley Blind,17,10,70,75,80,85,60
+Davy Klaassen,6,10,70,80,75,75,65
+Noussair Mazraoui,12,10,75,70,75,80,70
+Ryan Gravenberch,8,10,80,75,80,75,80
