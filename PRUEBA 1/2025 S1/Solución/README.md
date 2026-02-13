@@ -1,30 +1,30 @@
-# Solucion
+# Solución
 
-**Asignatura**: Programacion Orientada a Objetos  
+**Asignatura**: Programación Orientada a Objetos  
 **Periodo**: 2025 Semestre 1  
 **Tipo**: Prueba 1
 
-**Estado**: Implementacion completa
+**Estado**: Implementación completa
 
-## Descripcion
+## Descripción
 
-Solucion para el Problema 2 (Music Analytics). El programa carga datos desde archivos de texto, modela bandas, albumes, canciones y playlists, y entrega los reportes solicitados en la prueba.
+Solución para el Problema 2 (Music Analytics). El programa carga datos desde archivos de texto, modela bandas, álbumes, canciones y playlists, y entrega los reportes solicitados en la prueba.
 - **Fecha**: 29-04-2025
-- **Duracion**: 3 horas
+- **Duración**: 3 horas
 - **Profesores**: Alejandro Paolini, Cristhian Rabbi
 
-## Explicacion Detallada
+## Explicación Detallada
 
-Para una explicacion completa y paso a paso sobre el modelado y los reportes, revisa el archivo [EXPLICACION.md](EXPLICACION.md).
+Para una explicación completa y paso a paso sobre el modelado y los reportes, revisa el archivo [EXPLICACION.md](EXPLICACION.md).
 
 ## Ejercicio
 
 ### Problema 1: Ruteo (pendiente)
-**Problema:** Ruteo de codigo para indicar la salida esperada y dibujar la situacion final de los objetos (sin paso a paso).
-**Estado:** Se dejara espacio para adjuntar el enunciado y completar la explicacion.
+**Problema:** Ruteo de código para indicar la salida esperada y dibujar la situación final de los objetos (sin paso a paso).
+**Estado:** Se dejará espacio para adjuntar el enunciado y completar la explicación.
 
 ### Problema 2: Music Analytics
-**Problema:** Construir un sistema que permita registrar bandas, albumes, canciones y playlists, y generar reportes de analisis musical.
+**Problema:** Construir un sistema que permita registrar bandas, álbumes, canciones y playlists, y generar reportes de análisis musical.
 
 **Archivos de entrada:**
 - bandas.txt
@@ -33,87 +33,79 @@ Para una explicacion completa y paso a paso sobre el modelado y los reportes, re
 - ejemplos.txt (referencia de salida)
 
 **Reportes requeridos:**
-1) Composicion de estilos por banda
-2) Composicion de albumes por playlist
-3) Albumes agrupados por decada (1950-2030)
+1) Composición de estilos por banda
+2) Composición de álbumes por playlist
+3) Álbumes agrupados por década (1950-2030)
 4) Rating promedio por banda (promedio de ratings de sus canciones)
 
-## Estructura de la Solucion
+## Estructura de la Solución
 
 ```
-Solucion/
+Solución/
 ├── src/
 │   └── MusicAnalytics/
-│       ├── Main.java       (carga datos y menu)
-│       ├── Banda.java      (banda y sus albumes)
-│       ├── Album.java      (album y canciones)
-│       ├── Cancion.java    (cancion con genero y rating)
+│       ├── Main.java       (carga datos y menú)
+│       ├── Banda.java      (banda y sus álbumes)
+│       ├── Album.java      (álbum y canciones)
+│       ├── Cancion.java    (canción con género y rating)
 │       └── Playlist.java   (playlist y reportes)
 ├── README.md
 └── EXPLICACION.md
 ```
 
-## Como Cargar y Ejecutar en Eclipse
+## Cómo Cargar y Ejecutar en Eclipse
 
-### Opcion 1: Importar como Proyecto Existente
+### Ubicación en el Repositorio
+Este código se encuentra en: `Prog. Orientada a Objetos/PRUEBA 1/2025 S1/Solución/src/`
 
-1. **Crear una carpeta del proyecto:**
-	- Copia toda la carpeta `Solucion/` a una ubicacion accesible
-	- Renombrala a algo mas descriptivo, ej: `Prueba1_POO`
+### Opción Recomendada: Copiar la Carpeta `src/`
 
-2. **Abrir Eclipse y crear un nuevo proyecto Java:**
-	- `File` → `New` → `Java Project`
-	- Nombre del proyecto: `Prueba1_POO`
-	- Sol project contents: `Create from existing source`
-	- Browse → Selecciona la carpeta que copiaste
-	- Finish
+1. **Obtener los archivos fuente:**
+	- Descarga o clona el repositorio `Programacion-Avanzada`
+	- Navega a `Prog. Orientada a Objetos/PRUEBA 1/2025 S1/Solución/`
+	- Copia SOLO la carpeta `src/` a tu computadora
 
-3. **Lo que Eclipse deberia detectar:**
-	- Una carpeta `src/` con los archivos Java
-	- Eclipse automaticamente compilara los archivos
-
-4. **Ejecutar el programa:**
-	- Click derecho en `Main.java` en el Project Explorer
-	- `Run As` → `Java Application`
-
-### Opcion 2: Importar la Carpeta `src/` Directamente
-
-1. **En Eclipse, crear un nuevo Java Project:**
+2. **En Eclipse, crear un nuevo proyecto Java:**
 	- `File` → `New` → `Java Project`
 	- Nombre: `Prueba1_POO`
+	- Selecciona `Create from existing source`
+	- Browse → Apunta a la carpeta `src/` que copiaste
 	- Finish
 
-2. **Copiar archivos fuente:**
-	- En el Project Explorer, expande el proyecto
-	- Click derecho en la carpeta `src/` (dentro del proyecto)
-	- `Import` → `File System`
-	- Selecciona la carpeta `src/` de esta solucion
-	- Finish
-
-3. **Ejecutar:**
-	- Click derecho en `Main.java`
+3. **Ejecutar el programa:**
+	- Clic derecho en `Main.java`
 	- `Run As` → `Java Application`
+	- Deberías ver el menú de opciones en la consola
 
-### Opcion 3: Copiar y Pegar Archivos Manualmente
+### Opción Alternativa: Copiar Archivos Manualmente
 
-1. **Crear proyecto Java:**
+1. **Crear un nuevo proyecto Java en Eclipse:**
 	- `File` → `New` → `Java Project` → Nombre: `Prueba1_POO` → Finish
 
-2. **Copiar archivos:**
+2. **Copiar los archivos `.java`:**
 	- Abre el Explorador de archivos
-	- Ve a la carpeta `src/` de esta solucion
+	- Ve a `Prog. Orientada a Objetos/PRUEBA 1/2025 S1/Solución/src/MusicAnalytics/`
 	- Selecciona todos los archivos `.java`
-	- Copialos y pegalos en `Prueba1_POO/src/` en Eclipse
-	- Eclipse te pedira confirmar → Click "Yes to All"
+	- Cópialos y pégalos en la carpeta `src/` de tu proyecto en Eclipse
+	- Eclipse pedirá confirmación → Clic "Yes to All"
 
 3. **Ejecutar:**
-	- Click derecho en `Main.java`
+	- Clic derecho en `Main.java`
 	- `Run As` → `Java Application`
 
-## Verificar que Todo Funciona
+## Verificar que Todo Funciona Correctamente
 
-- En la consola deberias ver el menu con las 4 opciones de reporte.
-- Selecciona una opcion (1-4) y verifica la salida.
+- Al ejecutar `Main.java`, deberías ver el menú principal en la consola:
+  ```
+  ===== Menú de opciones: =====
+  1 - Mostrar composición de géneros por banda
+  2 - Mostrar composición de álbumes por playlist
+  3 - Mostrar álbumes agrupados por década
+  4 - Mostrar rating promedio por banda
+  5 - Salir
+  Ingrese una opción:
+  ```
+- Prueba cada opción (1-4) y verifica que la salida sea coherente con los datos de entrada
 
 ## Notas
 
@@ -123,4 +115,4 @@ Solucion/
 ## Estado
 
 - [x] Base de estructura
-- [x] Implementacion completa
+- [x] Implementación completa
