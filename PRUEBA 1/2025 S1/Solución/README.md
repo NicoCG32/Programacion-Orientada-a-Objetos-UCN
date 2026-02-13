@@ -4,24 +4,25 @@
 **Periodo**: 2025 Semestre 1  
 **Tipo**: Prueba 1
 
-**Estado**: Implementación completa
+**Estado**: ✅ Implementación completa
 
 ## Descripción
 
-Solución para el Problema 2 (Music Analytics). El programa carga datos desde archivos de texto, modela bandas, álbumes, canciones y playlists, y entrega los reportes solicitados en la prueba.
+Esta carpeta contiene las soluciones de la Prueba 1: el ruteo del Problema 1 y el sistema de Music Analytics del Problema 2. El programa carga datos desde archivos de texto, modela bandas, álbumes, canciones y playlists, y entrega los reportes solicitados en la prueba.
 - **Fecha**: 29-04-2025
 - **Duración**: 3 horas
 - **Profesores**: Alejandro Paolini, Cristhian Rabbi
+- **Puntaje total**: 1 punto (0.6 para aprobatoria)
 
 ## Explicación Detallada
 
-Para una explicación completa y paso a paso sobre el modelado y los reportes, revisa el archivo [EXPLICACION.md](EXPLICACION.md).
+Para una explicación completa y paso a paso sobre el modelado, los reportes y los diagramas, revisa el archivo [EXPLICACION.md](EXPLICACION.md).
 
 ## Ejercicio
 
-### Problema 1: Ruteo (pendiente)
+### Problema 1: Ruteo
 **Problema:** Ruteo de código para indicar la salida esperada y dibujar la situación final de los objetos (sin paso a paso).
-**Estado:** Se dejará espacio para adjuntar el enunciado y completar la explicación.
+**Estado:** Resuelto y documentado en [EXPLICACION.md](EXPLICACION.md).
 
 ### Problema 2: Music Analytics
 **Problema:** Construir un sistema que permita registrar bandas, álbumes, canciones y playlists, y generar reportes de análisis musical.

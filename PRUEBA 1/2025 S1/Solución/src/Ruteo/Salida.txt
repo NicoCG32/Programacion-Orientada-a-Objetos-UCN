@@ -1,0 +1,13 @@
+false
+false
+false
+VVS
+true
+VVS
+Cliente [RUT=5206, Nombre=Camilo Villanueva, Teléfono=555-9969]
+
+--- Lista de Pedidos Registrados ---
+Pedido [Número=501, Descripción=Ositos Haribo, Total=$3590, Cliente=Mauro Lombardo]
+Pedido [Número=503, Descripción=Pizza, Total=$6590, Cliente=Luis Torres]
+Pedido [Número=504, Descripción=Burger Bacon, Total=$3590, Cliente=Camilo Villanueva]
+Pedido [Número=505, Descripción=Coca-Cola, Total=$1590, Cliente=Mauro Lombardo]

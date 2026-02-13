@@ -79,7 +79,7 @@ Pedido [Número=505, Descripción=Coca-Cola, Total=$1590, Cliente=Mauro Lombardo
 
 ### Diagrama de objetos
 
-![Diagrama de Objetos - Ruteo](src/Ruteo/diagrama.png)
+![Diagrama de Objetos - Ruteo](src/Ruteo/DiagramaDeObjetos.png)
 
 El diagrama muestra:
 - Las instancias de Cliente y Pedido creadas
@@ -111,6 +111,13 @@ El diagrama muestra:
 - Album 1..N Canción: Album mantiene `ArrayList<Cancion> canciones`. Al crear una Canción se agrega con `AgregarCancion(c)` y la Canción guarda la referencia al Album con `c.setAlbum(this)`.
 - Playlist 1..N Canción: Playlist mantiene `ArrayList<Cancion> canciones`. Se agregan canciones con `AgregarCancion(c)` usando los IDs leídos del archivo.
 
+### Relación N..N (conceptual)
+
+Aunque la relación entre Playlist y Canción es conceptualmente N..N (una playlist puede contener muchas canciones y una canción puede aparecer en muchas playlists), el ejercicio está planteado para enfocarse solo en las canciones dentro de cada playlist. En otras palabras, la jerarquía pone a las playlists por encima, por lo que se modela y navega desde Playlist hacia Canción, sin necesidad de mantener la relación inversa en Canción.
+
+#### Nota Adicional
+En el código se incluyeron estas relaciones 1..N y también la relación conceptual N..N (Playlist–Canción). Aun cuando algunas referencias podrían ser innecesarias para resolver los reportes, se mantienen para dejar explícito el modelo y facilitar la navegación entre objetos.
+
 ### Paso a paso de la solución
 
 #### 1) Carga de bandas
@@ -127,7 +134,7 @@ Método: CargarMusica
 - Busca la Banda por id
 - Crea el Album y lo agrega a la Banda
 - Lee las N líneas de canciones
-- Convierte la duración mm:ss a segundos
+- Convierte la duración mm:ss a segundos (sólo por si acaso)
 - Crea cada Canción y la agrega al Album
 
 #### 3) Carga de playlists
@@ -137,7 +144,11 @@ Método: CargarPlaylist
 - Lee la línea siguiente con los IDs de canciones
 - Busca cada Canción en las bandas/albumes y la agrega a la Playlist
 
-### Reportes
+### Manejo de excepciones
+
+Se contempla `FileNotFoundException` al cargar archivos y `IllegalArgumentException` cuando una banda o canción no existe. La primera se captura en `main` y la segunda detiene la carga con un mensaje claro.
+
+### Reportes (Lógica)
 
 #### Reporte 1: Composición de estilos por banda
 
@@ -169,7 +180,14 @@ Método: Banda.calcularRating
 - Promedia los ratings de los álbumes de la banda
 - Imprime el resultado
 
+### Diagrama de clases y agregación
+
+![Diagrama de Clases - Music Analytics](DiagramaDeClases.png)
+
+La relación entre Banda y Album, y entre Album y Canción, se modela como agregación: los elementos pueden existir de forma independiente del contenedor. Por ejemplo, una banda puede existir sin álbumes (banda nueva o sin lanzamientos), y un álbum puede existir sin canciones cargadas aún (datos incompletos o en proceso). Del mismo modo, una playlist puede existir vacía o con canciones que se agregan después. Estas relaciones reflejan una pertenencia lógica, pero no una dependencia estricta de ciclo de vida.
+
 ## Observaciones
 
 - El programa espera que los archivos de entrada estén en la carpeta de ejecución.
 - Si un ID no existe, se lanza una excepción con mensaje descriptivo.
+- En las consideraciones se indica que una canción tiene un solo estilo, por eso el género se modela como atributo de `Cancion`.

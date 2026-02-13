@@ -9,7 +9,8 @@ public class Cancion {
 	private int rating;
 	
 	private Album album;
-	
+	private ArrayList<Playlist> playlist;
+
 	public Cancion(int id, String nombre, int segundos, String genero, int rating) {
 
 		this.id = id;
@@ -17,7 +18,8 @@ public class Cancion {
 		this.segundos = segundos;
 		this.genero = genero;
 		this.rating = rating;
-		
+
+		playlist = new ArrayList<>();
 	}
 
 	public int getId() {
@@ -48,6 +50,8 @@ public class Cancion {
 		album = a;
 	}
 
-	
+	public ArrayList<Playlist> getPlaylist() {
+		return playlist;
+	}
 
 }
