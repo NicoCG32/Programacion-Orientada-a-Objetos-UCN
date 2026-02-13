@@ -1,10 +1,10 @@
 # Solución
 
 **Asignatura**: Programación Orientada a Objetos  
-**Periodo**: 2025 Semestre 1  
+**Período**: 2025 Semestre 1  
 **Tipo**: Prueba 1
 
-**Estado**: ✅ Implementación completa
+**Estado**: ✅ Implementación completa | ✅ Documentación completa
 
 ## Descripción
 
@@ -46,10 +46,10 @@ Solución/
 ├── src/
 │   └── MusicAnalytics/
 │       ├── Main.java       (carga datos y menú)
-│       ├── Banda.java      (banda y sus álbumes)
-│       ├── Album.java      (álbum y canciones)
-│       ├── Cancion.java    (canción con género y rating)
-│       └── Playlist.java   (playlist y reportes)
+│       ├── Banda.java      (banda y sus albumes)
+│       ├── Album.java      (album y sus canciones)
+│       ├── Cancion.java    (cancion con genero y rating)
+│       └── Playlist.java   (playlist y sus canciones)
 ├── README.md
 └── EXPLICACION.md
 ```
@@ -117,3 +117,5 @@ Este código se encuentra en: `Prog. Orientada a Objetos/PRUEBA 1/2025 S1/Soluci
 
 - [x] Base de estructura
 - [x] Implementación completa
+- [x] Documentación Problema 1 (Ruteo)
+- [x] Documentación Problema 2 (Music Analytics)

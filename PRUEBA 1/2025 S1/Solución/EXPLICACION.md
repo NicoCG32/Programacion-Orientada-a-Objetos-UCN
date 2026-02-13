@@ -100,23 +100,23 @@ El diagrama muestra:
 
 ### Modelo de clases
 
-- Banda: tiene id, nombre, año de fundación y una lista de Album.
-- Album: tiene id, nombre, año de lanzamiento, lista de Canción y referencia a su Banda.
-- Canción: tiene id, nombre, duración en segundos, género, rating y referencia a su Album.
-- Playlist: tiene motivo y una lista de Canción.
+- Banda: tiene id, nombre, año de fundación y una lista de `Album`.
+- Album: tiene id, nombre, año de lanzamiento, lista de `Cancion` y referencia a su `Banda`.
+- Cancion: tiene id, nombre, duración en segundos, género, rating, referencia a su `Album` y una lista de `Playlist`.
+- Playlist: tiene motivo y una lista de `Cancion`.
 
 ### Relaciones 1..N
 
 - Banda 1..N Album: Banda mantiene `ArrayList<Album> albumes`. Al crear un Album se agrega con `AgregarAlbum(a)` y el Album guarda la referencia a la Banda con `a.setBanda(this)`.
-- Album 1..N Canción: Album mantiene `ArrayList<Cancion> canciones`. Al crear una Canción se agrega con `AgregarCancion(c)` y la Canción guarda la referencia al Album con `c.setAlbum(this)`.
-- Playlist 1..N Canción: Playlist mantiene `ArrayList<Cancion> canciones`. Se agregan canciones con `AgregarCancion(c)` usando los IDs leídos del archivo.
+- Album 1..N Cancion: Album mantiene `ArrayList<Cancion> canciones`. Al crear una Cancion se agrega con `AgregarCancion(c)` y la Cancion guarda la referencia al Album con `c.setAlbum(this)`.
+- Playlist 1..N Cancion: Playlist mantiene `ArrayList<Cancion> canciones`. Se agregan canciones con `AgregarCancion(c)` usando los IDs leídos del archivo.
 
 ### Relación N..N (conceptual)
 
-Aunque la relación entre Playlist y Canción es conceptualmente N..N (una playlist puede contener muchas canciones y una canción puede aparecer en muchas playlists), el ejercicio está planteado para enfocarse solo en las canciones dentro de cada playlist. En otras palabras, la jerarquía pone a las playlists por encima, por lo que se modela y navega desde Playlist hacia Canción, sin necesidad de mantener la relación inversa en Canción.
+Aunque la relación entre `Playlist` y `Cancion` es conceptualmente N..N (una playlist puede contener muchas canciones y una canción puede aparecer en muchas playlists), el ejercicio está planteado para enfocarse solo en las canciones dentro de cada playlist. En otras palabras, la jerarquía pone a las playlists por encima, por lo que se modela y navega desde `Playlist` hacia `Cancion`, sin necesidad de mantener la relación inversa en `Cancion`.
 
 #### Nota Adicional
-En el código se incluyeron estas relaciones 1..N y también la relación conceptual N..N (Playlist–Canción). Aun cuando algunas referencias podrían ser innecesarias para resolver los reportes, se mantienen para dejar explícito el modelo y facilitar la navegación entre objetos.
+En el código se incluyeron estas relaciones 1..N y también la relación conceptual N..N (`Playlist`–`Cancion`). Aun cuando algunas referencias podrían ser innecesarias para resolver los reportes, se mantienen para dejar explícito el modelo y facilitar la navegación entre objetos.
 
 ### Paso a paso de la solución
 
@@ -135,14 +135,14 @@ Método: CargarMusica
 - Crea el Album y lo agrega a la Banda
 - Lee las N líneas de canciones
 - Convierte la duración mm:ss a segundos (sólo por si acaso)
-- Crea cada Canción y la agrega al Album
+- Crea cada Cancion y la agrega al Album
 
 #### 3) Carga de playlists
 
 Método: CargarPlaylist
 - Lee el encabezado de la playlist (motivo, cantidad de canciones)
 - Lee la línea siguiente con los IDs de canciones
-- Busca cada Canción en las bandas/albumes y la agrega a la Playlist
+- Busca cada Cancion en las bandas/albumes y la agrega a la Playlist
 
 ### Manejo de excepciones
 
@@ -182,7 +182,7 @@ Método: Banda.calcularRating
 
 ### Diagrama de clases y agregación
 
-![Diagrama de Clases - Music Analytics](DiagramaDeClases.png)
+![Diagrama de Clases - Music Analytics](src/MusicAnalytics/DiagramaDeClases.png)
 
 La relación entre Banda y Album, y entre Album y Canción, se modela como agregación: los elementos pueden existir de forma independiente del contenedor. Por ejemplo, una banda puede existir sin álbumes (banda nueva o sin lanzamientos), y un álbum puede existir sin canciones cargadas aún (datos incompletos o en proceso). Del mismo modo, una playlist puede existir vacía o con canciones que se agregan después. Estas relaciones reflejan una pertenencia lógica, pero no una dependencia estricta de ciclo de vida.
 
