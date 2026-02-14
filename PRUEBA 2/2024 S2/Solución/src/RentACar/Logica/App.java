@@ -1,4 +1,4 @@
-package PruebaStrategy;
+package RentACar.Logica;
 
 import java.io.File;
 import java.io.FileNotFoundException;

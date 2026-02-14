@@ -11,7 +11,7 @@
 Esta carpeta contiene la solución de la Prueba 2: el ruteo con interfaz gráfica (Problema 1) y el sistema Rent a Car (Problema 2). El programa carga datos desde archivos de texto, modela vehículos y modos de manejo, y entrega los reportes solicitados en la prueba.
 - **Fecha**: 28-11-2024
 - **Duración**: 3 horas
-- **Profesores**: Alejandro Paolini, Mauricio Moraga
+- **Profesores**: Alejandro Paolini, Moisés Moraga
 - **Puntaje total**: 1 punto (0.6 para aprobatoria)
 
 ## Explicación Detallada
@@ -62,12 +62,8 @@ Sistema que solicita el RUT del usuario y crea una interfaz gráfica con layout 
 Solución/
 ├── src/
 │   ├── RuteoGUI/
-│   │   └── Main.java                (incluye todas las clases)
-│   │       ├── Main                 (clase principal)
-│   │       ├── Configurator         (Singleton)
-│   │       ├── LayoutStrategy       (interface)
-│   │       ├── HorizontalLayoutStrategy
-│   │       └── VerticalLayoutStrategy
+│   │   ├── Main.java                (incluye todas las clases)
+│   │   └── Respuestas.md
 │   └── RentACar/
 │       ├── Dominio/
 │       │   ├── Vehiculo.java         (clase abstracta base)

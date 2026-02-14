@@ -3,7 +3,7 @@
 **Asignatura**: Programación Orientada a Objetos  
 **Período**: 2024 Semestre 2  
 **Fecha**: 28/11/2024  
-**Profesores**: Alejandro Paolini, Mauricio Moraga
+**Profesores**: Alejandro Paolini, Moisés Moraga
 
 ---
 
@@ -34,6 +34,8 @@ Dependiendo del cuarto dígito del RUT, la interfaz se verá así:
 ![Ejemplo layout vertical](src/RuteoGUI/VerticalGUI.png)
 
 ### Respuestas a las preguntas del enunciado
+
+Detalle completo en [Respuestas.md](src/RuteoGUI/Respuestas.md).
 
 **¿Al presionar qué botón aparece un mensaje por la pantalla?**
 
@@ -443,4 +445,4 @@ Esta solución demuestra:
 - ✅ Programación orientada a objetos con bajo acoplamiento
 - ✅ Código mantenible y extensible
 
-**Estado**: Problema 1 completo (ruteo GUI), Problema 2 completo (implementación con patrones).
+**Estado**: Implementación completa, documentación completa.
