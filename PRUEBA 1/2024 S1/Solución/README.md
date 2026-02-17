@@ -98,5 +98,5 @@ Este codigo se encuentra en: `Prog. Orientada a Objetos/PRUEBA 1/2024 S1/Soluci�
 
 - [x] Base de estructura
 - [ ] Implementación completa
-- [ ] Documentación Problema 1 (Ruteo)
+- [x] Documentación Problema 1 (Ruteo)
 - [ ] Documentación Problema 2 (Mapaches Celulares)

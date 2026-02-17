@@ -8,37 +8,26 @@ public class Mapa {
 	
 	private int cantMapaches;
 	private Mapache[] mapaches;
-	private int totalMapaches;
 	
-	public Mapa(int n, int cantMapaches, int[][] matriz) {
+	public Mapa(int n, int cantMapaches) {
 		mapa = new Mapache[n][n];
 		mapaches = new Mapache[cantMapaches];
-		totalMapaches = 0;
-		this.cantMapaches = cantMapaches;
+		this.cantMapaches = 0; // Indice para agregar mapaches, no es la cantidad total de mapaches
 	}
 
-	public void ConstruirMapa(int[][] matriz) {
-	
-		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
-			
-				if (matriz[i][j] != 0) {
-					Mapache m = BuscarMapache(matriz[i][j]);
-					if (m == null) {
-						throw new IllegalArgumentException("Rut no encontrado en mapaches: " + matriz[i][j]);
-					}
-					mapa[i][j] = m;
-					m.setFila(i);
-					m.setColumna(j);
-				}
-				
-			}
+	public void ColocarMapache(int fila, int columna, int rut) {
+		Mapache m = BuscarMapache(rut);
+		if (m == null) {
+			throw new IllegalArgumentException("Rut no encontrado en mapaches: " + rut);
 		}
+		mapa[fila][columna] = m;
+		m.setFila(fila);
+		m.setColumna(columna);
 	}
 
 	private Mapache BuscarMapache(int rut) {
 		Mapache m = null;
-		for (int i = 0; i < totalMapaches; i++) {
+		for (int i = 0; i < cantMapaches; i++) {
 			if (mapaches[i].getRut() == rut) {
 				return mapaches[i];
 			}
@@ -47,20 +36,20 @@ public class Mapa {
 	}
 
 	public void AgregarMapache(Mapache m) {
-		if (totalMapaches < mapaches.length) {
-			mapaches[totalMapaches] = m;
-			totalMapaches++;
+		if (cantMapaches < mapaches.length) {
+			mapaches[cantMapaches] = m;
+			cantMapaches++;
 		}
 	}
 
 	private void EliminarMapache(Mapache m) {
-		for (int i = 0; i < totalMapaches; i++) {
+		for (int i = 0; i < cantMapaches; i++) {
 			if (mapaches[i] == m) {
-				for (int j = i; j < totalMapaches - 1; j++) {
+				for (int j = i; j < cantMapaches - 1; j++) {
 					mapaches[j] = mapaches[j + 1];
 				}
-				mapaches[totalMapaches - 1] = null;
-				totalMapaches--;
+				mapaches[cantMapaches - 1] = null;
+				cantMapaches--;
 				return;
 			}
 		}
@@ -177,7 +166,6 @@ public class Mapa {
 				ganador.setFila(fila);
 				ganador.setColumna(columna);
 				EliminarMapache(perdedor);
-				cantMapaches--;
 			} else {
 				
 				mapa[m.getFila()][m.getColumna()] = null;
@@ -209,7 +197,6 @@ public class Mapa {
 				ganador.setFila(fila);
 				ganador.setColumna(columna);
 				EliminarMapache(perdedor);
-				cantMapaches--;
 			} else {
 				
 				mapa[m.getFila()][m.getColumna()] = null;
@@ -241,10 +228,10 @@ public class Mapa {
 				} else {
 					System.out.print("_ ");
 				}
+
 			}
 			System.out.println();
-			
 		}
-		
 	}
+
 }

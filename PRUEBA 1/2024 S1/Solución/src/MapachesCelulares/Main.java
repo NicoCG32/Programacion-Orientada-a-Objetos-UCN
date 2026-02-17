@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		File posiciones = new File("TxtMapache/mapaches_posiciones.txt");
-		File mapaches = new File("TxtMapache/mapaches.txt");
+		File posiciones = new File("mapaches_posiciones.txt");
+		File mapaches = new File("mapaches.txt");
 
 		try {
 			Mapa mapa = CargarMapa(posiciones, mapaches);
@@ -16,47 +16,43 @@ public class Main {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-		
-		
 	}
 
 	public static Mapa CargarMapa(File posiciones, File mapaches) throws FileNotFoundException {
-		
-		Scanner lector = new Scanner(posiciones);
-		Scanner lector2 = new Scanner(mapaches);
-		
-		int orden = Integer.valueOf(lector.nextLine());
-		int cantMapaches = Integer.valueOf(lector2.nextLine());
-		
-		int[][] matriz = new int[orden][orden];
-		
-		for (int f = 0; f < orden; f++) {
-			String linea = lector.nextLine();
+		Scanner lectorMapaches = new Scanner(mapaches);
+		int cantMapaches = Integer.valueOf(lectorMapaches.nextLine());
+
+		Scanner lectorPosiciones = new Scanner(posiciones);
+		int orden = Integer.valueOf(lectorPosiciones.nextLine());
+
+		Mapa mapa = new Mapa(orden, cantMapaches);
+
+		while (lectorMapaches.hasNextLine()) {
+			String linea = lectorMapaches.nextLine();
 			String[] partes = linea.split(",");
-			for (int c = 0; c < partes.length; c++) {
-				int valor = Integer.valueOf(partes[c]);
-				matriz[f][c] = valor;
-			}
-		}
-		
-		Mapa mapa = new Mapa(orden, cantMapaches, matriz);
-		
-		while (lector2.hasNextLine()) {
-			String linea = lector2.nextLine();
-			String[] partes = linea.split(",");
-			
+
 			int rut = Integer.valueOf(partes[0]);
 			String nombre = partes[1];
 			int masa = Integer.valueOf(partes[2]);
-			
+
 			Mapache m = new Mapache(rut, nombre, masa);
 			mapa.AgregarMapache(m);
 		}
-		
-		mapa.ConstruirMapa(matriz);
-		
-		lector.close();
-		lector2.close();
+
+		for (int f = 0; f < orden; f++) {
+			String linea = lectorPosiciones.nextLine();
+			String[] partes = linea.split(",");
+
+			for (int c = 0; c < partes.length; c++) {
+				int valor = Integer.valueOf(partes[c]);
+				if (valor != 0) {
+					mapa.ColocarMapache(f, c, valor);
+				}
+			}
+		}
+
+		lectorMapaches.close();
+		lectorPosiciones.close();
 		return mapa;
 	}
 	
