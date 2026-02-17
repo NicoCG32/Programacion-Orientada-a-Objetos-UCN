@@ -78,6 +78,16 @@ Este código se encuentra en: `Prog. Orientada a Objetos/PRUEBA 1/2025 S1/Soluci
 	- `Run As` → `Java Application`
 	- Deberías ver el menú de opciones en la consola
 
+### Importante: Archivos de Texto
+
+Para que el programa pueda leer los archivos de texto (.txt) correctamente:
+- Copia los archivos `bandas.txt`, `musica.txt` y `playlists.txt` desde `Prog. Orientada a Objetos/PRUEBA 1/2025 S1/` a la raíz de tu proyecto (paralelo a la carpeta `src/`)
+- Los archivos requeridos son:
+  - `bandas.txt` (información de bandas)
+  - `musica.txt` (información de álbumes y canciones)
+  - `playlists.txt` (información de playlists)
+- El programa los buscará en la raíz del proyecto, no dentro de `src/`
+
 ### Opción Alternativa: Copiar Archivos Manualmente
 
 1. **Crear un nuevo proyecto Java en Eclipse:**

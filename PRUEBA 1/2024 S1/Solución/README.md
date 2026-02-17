@@ -68,6 +68,15 @@ Este codigo se encuentra en: `Prog. Orientada a Objetos/PRUEBA 1/2024 S1/Soluci�
 	- Clic derecho en `App.java` (ruteo) o `Main.java` (mapaches)
 	- `Run As` → `Java Application`
 
+### Importante: Archivos de Texto
+
+Para que el programa pueda leer los archivos de texto (.txt) correctamente:
+- Copia los archivos `mapaches_posiciones.txt` y `mapaches.txt` desde `Prog. Orientada a Objetos/PRUEBA 1/2024 S1/` a la raíz de tu proyecto (paralelo a la carpeta `src/`)
+- Los archivos requeridos son:
+  - `mapaches_posiciones.txt` (posiciones iniciales en el tablero)
+  - `mapaches.txt` (datos de los mapaches)
+- El programa los buscará en la raíz del proyecto, no dentro de `src/`
+
 ### Opción Alternativa: Copiar Archivos Manualmente
 
 1. **Crear un nuevo proyecto Java en Eclipse:**
@@ -91,8 +100,8 @@ Este codigo se encuentra en: `Prog. Orientada a Objetos/PRUEBA 1/2024 S1/Soluci�
 
 ## Notas
 
-- Los archivos de entrada deben estar disponibles en la ruta esperada por el programa (ver constantes en `Main.java`).
-- Si usas las carpetas del repositorio, puedes mover los txt a una carpeta `TxtMapache/` o ajustar la ruta en el codigo.
+- Los archivos de entrada (`mapaches_posiciones.txt` y `mapaches.txt`) deben estar en la raíz del proyecto (paralelo a `src/`).
+- Si deseas usar otra ubicación, ajusta las rutas en `Main.java`.
 
 ## Estado
 

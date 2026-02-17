@@ -112,6 +112,14 @@ Este código se encuentra en: `Prog. Orientada a Objetos/PRUEBA 2/2024 S2/Soluci
    - Para Rent a Car: clic derecho en `RentACar/Logica/App.java` → `Run As` → `Java Application`
    - Para el ruteo GUI: clic derecho en `RuteoGUI/Main.java` → `Run As` → `Java Application`
 
+### Importante: Archivos de Texto
+
+Para que el programa pueda leer los archivos de texto (.txt) correctamente:
+- Copia el archivo `fleet.txt` desde `Prog. Orientada a Objetos/PRUEBA 2/2024 S2/` a la raíz de tu proyecto (paralelo a la carpeta `src/`)
+- Los archivos requeridos son:
+  - `fleet.txt` (información de la flota de vehículos)
+- El programa los buscará en la raíz del proyecto, no dentro de `src/`
+
 ### Opción Alternativa: Copiar Archivos Manualmente
 
 1. **Crear un nuevo proyecto Java en Eclipse:**
@@ -144,7 +152,7 @@ Este código se encuentra en: `Prog. Orientada a Objetos/PRUEBA 2/2024 S2/Soluci
 
 ## Notas Generales
 
-- El sistema Rent a Car requiere el archivo `fleet.txt` en la ruta de ejecución; en esta solución se busca en `Txt/fleet.txt`.
+- El sistema Rent a Car requiere el archivo `fleet.txt` en la raíz del proyecto (paralelo a `src/`).
 - Los modos de manejo ajustan la eficiencia según la implementación: Eco `* 1.111111`, Normal `* 1.0`, Sport `* 0.8`.
 - Se implementa arquitectura de 3 capas con separación de responsabilidades.
 - No se utilizan ciclos anidados según especificación.

@@ -96,6 +96,14 @@ Este código se encuentra en: `Prog. Orientada a Objetos/PRUEBA 2/2024 S1/Soluci
    - Para el Problema 2: `NewJurassicWorld/Logica/App.java`
    - Clic derecho en el archivo → `Run As` → `Java Application`
 
+### Importante: Archivos de Texto
+
+Para que el programa pueda leer los archivos de texto (.txt) correctamente:
+- Copia el archivo `fauna.txt` desde `Prog. Orientada a Objetos/PRUEBA 2/2024 S1/` a la raíz de tu proyecto (paralelo a la carpeta `src/`)
+- Los archivos requeridos son:
+  - `fauna.txt` (información de dinosaurios)
+- El programa los buscará en la raíz del proyecto, no dentro de `src/`
+
 ### Opción Alternativa: Copiar Archivos Manualmente
 
 1. **Crear un nuevo proyecto Java en Eclipse:**
@@ -118,7 +126,7 @@ Este código se encuentra en: `Prog. Orientada a Objetos/PRUEBA 2/2024 S1/Soluci
 - Se requiere usar herencia, patron Visitor y la arquitectura con `Sistema`.
 - Los dinosaurios deben almacenarse en una sola lista.
 - Evitar ciclos anidados, usar funciones auxiliares.
-- El archivo `fauna.txt` se lee desde la carpeta de ejecucion del proyecto.
+- El archivo `fauna.txt` debe estar en la raíz del proyecto (paralelo a `src/`).
 
 ## Estado
 

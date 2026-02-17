@@ -24,7 +24,7 @@ public class App {
 
 	public static void CargarArchivo() throws FileNotFoundException {
 
-		File archivo = new File("Txt/fleet.txt");
+		File archivo = new File("fleet.txt");
 		Scanner lector = new Scanner(archivo);
 		
 		int valor = Integer.valueOf(lector.nextLine());
