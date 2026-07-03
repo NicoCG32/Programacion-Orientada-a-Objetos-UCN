@@ -129,9 +129,9 @@ Cada subclase agrega su atributo específico (cicatrices, planta favorita, dista
 
 #### Diagrama de clases
 
-El diagrama de clases se encuentra en el archivo [diagrama_clases.puml](diagrama_clases.puml). Resume la jerarquia de `Dinosaurio`, el contrato `DinoVisitor`, y la separacion por paquetes (Dominio, Factory, Logica, Visitor).
+El diagrama de clases se encuentra en el archivo [diagrama_clases.puml](diagrama_clases.puml). Resume la jerarquía de `Dinosaurio`, el contrato `DinoVisitor` y la separación por paquetes (Dominio, Factory, Lógica, Visitor).
 
-### Patrones de Diseño Implementados
+### Patrones de diseño implementados
 
 #### 1. **Factory** (DinoFactory)
 
@@ -168,21 +168,21 @@ src/
 │   └── Visitor/
 ```
 
-La clase `Sistema` define el contrato y `SistemaImpl` concentra la lista unica de dinosaurios.
+La clase `Sistema` define el contrato y `SistemaImpl` concentra la lista única de dinosaurios.
 
-### Flujo general de la solucion
+### Flujo general de la solución
 
-1. `App` carga el archivo `fauna.txt` desde la carpeta de ejecucion.
-2. Cada linea se parsea y se delega a `SistemaImpl` la creacion del objeto.
-3. `DinoFactory` instancia la subclase correcta segun la especie.
-4. Los reportes se calculan con Visitor recorriendo una unica lista de dinosaurios.
+1. `App` carga el archivo `fauna.txt` desde la carpeta de ejecución.
+2. Cada línea se parsea y se delega a `SistemaImpl` la creación del objeto.
+3. `DinoFactory` instancia la subclase correcta según la especie.
+4. Los reportes se calculan con Visitor recorriendo una única lista de dinosaurios.
 
 ### Decisiones de diseño clave
 
-- **Lista unica de dinosaurios:** respeta la restriccion del enunciado y simplifica el recorrido con Visitor.
-- **Factory para instanciacion:** centraliza el parseo de especies y evita condicionales dispersas.
-- **Visitor para reportes:** permite agregar nuevos calculos sin tocar las clases de dominio.
-- **Singleton en `SistemaImpl` y `DinoFactory`:** asegura un unico punto de acceso al estado del sistema.
+- **Lista única de dinosaurios:** respeta la restricción del enunciado y simplifica el recorrido con Visitor.
+- **Factory para instanciación:** centraliza el parseo de especies y evita condicionales dispersas.
+- **Visitor para reportes:** permite agregar nuevos cálculos sin tocar las clases de dominio.
+- **Singleton en `SistemaImpl` y `DinoFactory`:** asegura un único punto de acceso al estado del sistema.
 
 ### Procesamiento del Archivo `fauna.txt`
 
@@ -192,21 +192,21 @@ Formato esperado:
 id_dinosaurio,especie,peso,altura,velocidad,region,atributo
 ```
 
-Ruta usada por el codigo:
+Ruta usada por el código:
 
 ```
 fauna.txt
 ```
 
-Cada linea se separa por coma y se crea el dinosaurio via `DinoFactory`.
+Cada línea se separa por coma y se crea el dinosaurio vía `DinoFactory`.
 
 ### Manejo de excepciones y validaciones
 
 - Si `fauna.txt` no existe, `App` captura `FileNotFoundException` y muestra un mensaje claro.
-- En el calculo de tasa de adaptacion, se ignoran dinosaurios con altura o velocidad invalidas para evitar divisiones por cero.
+- En el cálculo de tasa de adaptación, se ignoran dinosaurios con altura o velocidad inválidas para evitar divisiones por cero.
 - El resto del parseo asume formato correcto, consistente con los archivos de prueba entregados.
 
-### Calculo de la Tasa de Adaptacion
+### Cálculo de la Tasa de Adaptación
 
 La tasa depende de la especie:
 
@@ -230,17 +230,17 @@ $$
 Brachiosaurus = (altura - largo\_cuello) \cdot peso
 $$
 
-En el visitor se valida altura y velocidad para evitar divisiones por cero; si son invalidas, se ignora el dinosaurio en el calculo de la tasa.
+En el visitor se valida altura y velocidad para evitar divisiones por cero; si son inválidas, se ignora el dinosaurio en el cálculo de la tasa.
 
-### Resultados Esperados
+### Resultados esperados
 
 Al ejecutar `App.java`, el sistema imprime:
 
 1. Cantidad por especie y hemisferio.
-2. El dinosaurio mas pesado, mas alto y mas veloz.
-3. El dinosaurio con mayor tasa de adaptacion.
+2. El dinosaurio más pesado, más alto y más veloz.
+3. El dinosaurio con mayor tasa de adaptación.
 
-El formato de salida esta alineado con [ejemplo.txt](../ejemplo.txt).
+El formato de salida está alineado con [ejemplo.txt](../ejemplo.txt).
 
 ---
 
@@ -248,8 +248,8 @@ El formato de salida esta alineado con [ejemplo.txt](../ejemplo.txt).
 
 Esta solución implementa:
 - ✅ Ruteo GUI con Factory
-- ✅ Jerarquia de clases y herencia
+- ✅ Jerarquía de clases y herencia
 - ✅ Visitor para los reportes
-- ✅ Arquitectura con `Sistema` y lista unica de dinosaurios
+- ✅ Arquitectura con `Sistema` y lista única de dinosaurios
 
 **Estado**: Implementación completa, documentación completa.

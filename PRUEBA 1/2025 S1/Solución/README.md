@@ -1,131 +1,15 @@
-# Solución
+# Solución - Prueba 1 - 2025 S1
 
-**Asignatura**: Programación Orientada a Objetos  
-**Período**: 2025 Semestre 1  
-**Tipo**: Prueba 1
+| Campo | Detalle |
+| --- | --- |
+| Evaluación | Prueba 1 - 2025 S1 |
+| Estado | Completa |
 
-**Estado**: ✅ Implementación completa | ✅ Documentación completa
+## Tipo de ejercicios
 
-## Descripción
+- Ruteo de objetos con salida esperada y diagrama de objetos.
+- Sistema Music Analytics con clases de dominio, lectura de archivos y relaciones 1..N.
 
-Esta carpeta contiene las soluciones de la Prueba 1: el ruteo del Problema 1 y el sistema de Music Analytics del Problema 2. El programa carga datos desde archivos de texto, modela bandas, álbumes, canciones y playlists, y entrega los reportes solicitados en la prueba.
-- **Fecha**: 29-04-2025
-- **Duración**: 3 horas
-- **Profesores**: Alejandro Paolini, Cristhian Rabbi
-- **Puntaje total**: 1 punto (0.6 para aprobatoria)
+## Documentación
 
-## Explicación Detallada
-
-Para una explicación completa y paso a paso sobre el modelado, los reportes y los diagramas, revisa el archivo [EXPLICACION.md](EXPLICACION.md).
-
-## Ejercicio
-
-### Problema 1: Ruteo
-**Problema:** Ruteo de código para indicar la salida esperada y dibujar la situación final de los objetos (sin paso a paso).
-**Estado:** Resuelto y documentado en [EXPLICACION.md](EXPLICACION.md).
-
-### Problema 2: Music Analytics
-**Problema:** Construir un sistema que permita registrar bandas, álbumes, canciones y playlists, y generar reportes de análisis musical.
-
-**Archivos de entrada:**
-- bandas.txt
-- musica.txt
-- playlists.txt
-- ejemplos.txt (referencia de salida)
-
-**Reportes requeridos:**
-1) Composición de estilos por banda
-2) Composición de álbumes por playlist
-3) Álbumes agrupados por década (1950-2030)
-4) Rating promedio por banda (promedio de ratings de sus canciones)
-
-## Estructura de la Solución
-
-```
-Solución/
-├── src/
-│   └── MusicAnalytics/
-│       ├── Main.java       (carga datos y menú)
-│       ├── Banda.java      (banda y sus albumes)
-│       ├── Album.java      (album y sus canciones)
-│       ├── Cancion.java    (cancion con genero y rating)
-│       └── Playlist.java   (playlist y sus canciones)
-├── README.md
-└── EXPLICACION.md
-```
-
-## Cómo Cargar y Ejecutar en Eclipse
-
-### Ubicación en el Repositorio
-Este código se encuentra en: `Prog. Orientada a Objetos/PRUEBA 1/2025 S1/Solución/src/`
-
-### Opción Recomendada: Copiar la Carpeta `src/`
-
-1. **Obtener los archivos fuente:**
-	- Descarga o clona el repositorio `Programacion-Avanzada`
-	- Navega a `Prog. Orientada a Objetos/PRUEBA 1/2025 S1/Solución/`
-	- Copia SOLO la carpeta `src/` a tu computadora
-
-2. **En Eclipse, crear un nuevo proyecto Java:**
-	- `File` → `New` → `Java Project`
-	- Nombre: `Prueba1_POO`
-	- Selecciona `Create from existing source`
-	- Browse → Apunta a la carpeta `src/` que copiaste
-	- Finish
-
-3. **Ejecutar el programa:**
-	- Clic derecho en `Main.java`
-	- `Run As` → `Java Application`
-	- Deberías ver el menú de opciones en la consola
-
-### Importante: Archivos de Texto
-
-Para que el programa pueda leer los archivos de texto (.txt) correctamente:
-- Copia los archivos `bandas.txt`, `musica.txt` y `playlists.txt` desde `Prog. Orientada a Objetos/PRUEBA 1/2025 S1/` a la raíz de tu proyecto (paralelo a la carpeta `src/`)
-- Los archivos requeridos son:
-  - `bandas.txt` (información de bandas)
-  - `musica.txt` (información de álbumes y canciones)
-  - `playlists.txt` (información de playlists)
-- El programa los buscará en la raíz del proyecto, no dentro de `src/`
-
-### Opción Alternativa: Copiar Archivos Manualmente
-
-1. **Crear un nuevo proyecto Java en Eclipse:**
-	- `File` → `New` → `Java Project` → Nombre: `Prueba1_POO` → Finish
-
-2. **Copiar los archivos `.java`:**
-	- Abre el Explorador de archivos
-	- Ve a `Prog. Orientada a Objetos/PRUEBA 1/2025 S1/Solución/src/MusicAnalytics/`
-	- Selecciona todos los archivos `.java`
-	- Cópialos y pégalos en la carpeta `src/` de tu proyecto en Eclipse
-	- Eclipse pedirá confirmación → Clic "Yes to All"
-
-3. **Ejecutar:**
-	- Clic derecho en `Main.java`
-	- `Run As` → `Java Application`
-
-## Verificar que Todo Funciona Correctamente
-
-- Al ejecutar `Main.java`, deberías ver el menú principal en la consola:
-  ```
-  ===== Menú de opciones: =====
-  1 - Mostrar composición de géneros por banda
-  2 - Mostrar composición de álbumes por playlist
-  3 - Mostrar álbumes agrupados por década
-  4 - Mostrar rating promedio por banda
-  5 - Salir
-  Ingrese una opción:
-  ```
-- Prueba cada opción (1-4) y verifica que la salida sea coherente con los datos de entrada
-
-## Notas
-
-- El sistema asume que los IDs de canciones y bandas existen en los archivos.
-- Los porcentajes se calculan sobre el total de canciones consideradas.
-
-## Estado
-
-- [x] Base de estructura
-- [x] Implementación completa
-- [x] Documentación Problema 1 (Ruteo)
-- [x] Documentación Problema 2 (Music Analytics)
+- Explicación detallada: [EXPLICACION.md](EXPLICACION.md).

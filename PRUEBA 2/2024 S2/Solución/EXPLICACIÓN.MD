@@ -105,7 +105,7 @@ Implementa layout horizontal usando `BoxLayout.X_AXIS`. Crea un panel con 5 boto
 
 Implementa layout vertical usando `BoxLayout.Y_AXIS`. Crea un panel con 5 botones dispuestos en columna.
 
-### Patrones de Diseño Utilizados
+### Patrones de diseño utilizados
 
 #### 1. **Singleton** (Configurator)
 - **Propósito**: Garantizar una única instancia del configurador
@@ -164,7 +164,7 @@ Sistema de gestión de flota de vehículos para una empresa de arriendo. Debe:
    - Herencia obligatoria
    - Sin ciclos anidados
 
-### Patrones de Diseño Implementados
+### Patrones de diseño implementados
 
 #### 1. **Factory** (IVehiculoFactory + VehiculoFactory)
 
@@ -202,15 +202,15 @@ double calcularConsumo(double eficiencia, int distancia)
 | Normal | "N"    | Sin cambio              | `eficiencia * 1.0`      |
 | Sport  | "S"    | Aumenta consumo 25%     | `eficiencia * 0.8`      |
 
-**Nota (detalle de la conversión):** El enunciado habla de eficiencia, pero el sistema calcula consumo con la formula
-`consumo = distancia / eficiencia`. Por eso se ajusta la eficiencia y luego se aplica la misma formula.
+**Nota (detalle de la conversión):** El enunciado habla de eficiencia, pero el sistema calcula consumo con la fórmula
+`consumo = distancia / eficiencia`. Por eso se ajusta la eficiencia y luego se aplica la misma fórmula.
 
 - **Eco (eficiencia -10%)**: eficiencia_eco = 0.9 * eficiencia. Entonces
    `consumo = distancia / (0.9 * eficiencia)`, que es equivalente a dividir por 0.9, o multiplicar por 1.111111.
 - **Sport (eficiencia +25%)**: eficiencia_sport = 1.25 * eficiencia. Entonces
    `consumo = distancia / (1.25 * eficiencia)`, que es equivalente a dividir por 1.25, o multiplicar por 0.8.
 
-Así, los factores `1.111111` y `0.8` son equivalencias matematicas para reflejar el mismo cambio en consumo final.
+Así, los factores `1.111111` y `0.8` son equivalencias matemáticas para reflejar el mismo cambio en consumo final.
 
 **Implementación con Singleton:**
 Cada modo de manejo es un Singleton (ej: `ModoEco.getModoEco()`) para evitar múltiples instancias idénticas.
@@ -362,7 +362,7 @@ Utiliza `VisitorMayorConsumo` para identificar:
 - SUV con mayor consumo
 - Auto con mayor consumo
 
-### Decisiones de Diseño
+### Decisiones de diseño
 
 #### ¿Por qué usar Singleton en las Estrategias?
 Los modos de manejo no tienen estado mutable, por lo que compartir una única instancia:
@@ -387,7 +387,7 @@ El enunciado indica evitar ciclos anidados. En la solución, la carga de usos
 usa un `while` con un `for` interno para recorrer las distancias de cada línea.
 El resto de recorridos se mantienen en un solo nivel.
 
-### Resultados Esperados
+### Resultados esperados
 
 Al ejecutar `App.java`, el sistema debe mostrar:
 
