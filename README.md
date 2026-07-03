@@ -199,6 +199,247 @@ Una distinción práctica: si el comportamiento depende del tipo concreto del ob
 
 Las pruebas de GUI trabajan con ventanas, paneles, botones, listeners, layouts e imágenes. En estos ejercicios conviene separar la construcción visual de la lógica del problema para evitar que la interfaz absorba responsabilidades que pertenecen al dominio.
 
+## Glosario NicoPablo
+
+Esta sección conserva las explicaciones simples del README original. La intención es estudiar los conceptos con lenguaje humano, antes de entrar al vocabulario más formal.
+
+### Clase vs objeto
+
+La **clase** es el molde o plano que define la estructura y el comportamiento de un conjunto de objetos. En ella se especifican:
+
+- Los **atributos**: el estado.
+- Los **métodos**: el comportamiento.
+- Las reglas internas que regulan su funcionamiento.
+
+Puede entenderse como una receta o un cortador de galletas.
+
+El **objeto**, en cambio, es una **instancia concreta** creada a partir de una clase. Es la galleta real, con valores propios en sus atributos.
+
+Conceptualmente:
+
+- La clase define la estructura.
+- El objeto contiene el estado.
+- La clase existe en el código.
+- El objeto existe en memoria durante la ejecución.
+
+### Abstracción
+
+La **abstracción** consiste en interpretar y modelar un problema del mundo real, identificando los elementos esenciales y omitiendo los irrelevantes.
+
+Antes de programar, se debe decidir:
+
+- Qué entidades forman parte del problema.
+- Qué clases se necesitan.
+- Qué atributos son relevantes.
+- Qué comportamientos deben modelarse.
+
+Por ejemplo, si un amigo te pide guardar ropa, puedes pensar en un clóset, una habitación o una caja; tú defines la forma y las propiedades específicas.
+
+Abstraer implica:
+
+- Simplificar la realidad.
+- Enfocarse en lo necesario para resolver el problema.
+- Construir un modelo coherente y funcional.
+
+Una mala abstracción conduce a un diseño deficiente.
+
+### Encapsulamiento
+
+El **encapsulamiento** consiste en controlar la visibilidad y el acceso a los atributos y métodos de una clase.
+
+Su objetivo es:
+
+- Proteger el estado interno.
+- Evitar accesos indebidos.
+- Exponer únicamente lo necesario.
+
+No todos los atributos deben ser públicos. No todas las operaciones deben ser accesibles desde cualquier parte del sistema.
+
+Aplicado a la arquitectura:
+
+- La `App` realiza solicitudes.
+- El `Sistema` define los métodos disponibles.
+- El `SistemaImpl` implementa la lógica interna.
+
+La `App` no conoce cómo se ejecutan las operaciones; solo conoce qué puede solicitar. Esto permite mantener el control sobre la lógica interna y reducir el acoplamiento entre componentes.
+
+### Herencia
+
+La **herencia** permite que una clase derive de otra, reutilizando atributos y métodos comunes.
+
+Se utiliza cuando varias clases comparten características similares. En lugar de duplicar código:
+
+- Se define una clase base con los elementos comunes.
+- Las subclases heredan esos elementos.
+
+Si la clase base no debe instanciarse directamente, se declara como `abstract`.
+
+Esto implica que:
+
+- No se pueden crear objetos de la clase base.
+- Solo se pueden crear instancias de las subclases concretas.
+- Todas comparten la estructura y comportamiento común definido en la clase base.
+
+La herencia representa una relación del tipo: “es un tipo de”. Debe utilizarse únicamente cuando esa relación conceptual es válida.
+
+### Polimorfismo
+
+El **polimorfismo** permite que un mismo nombre de método represente comportamientos distintos según el contexto.
+
+#### Polimorfismo en métodos: sobrecarga
+
+Consiste en definir varios métodos con el mismo nombre, pero con diferentes listas de parámetros.
+
+El compilador determina cuál método ejecutar según los argumentos proporcionados. Este tipo de polimorfismo se resuelve en tiempo de compilación.
+
+#### Polimorfismo en clases: sobreescritura
+
+Ocurre cuando una subclase redefine un método heredado de la clase base, proporcionando una implementación específica.
+
+Por ejemplo, todos los peleadores pueden tener un método `golpear()`, pero:
+
+- El boxeador golpea a puño cerrado.
+- El karateka golpea a mano abierta.
+
+El nombre del método es el mismo, pero el comportamiento depende del tipo real del objeto en tiempo de ejecución. Este es el polimorfismo más relevante en Programación Orientada a Objetos.
+
+### Interfaces
+
+Una **interfaz** define un conjunto de métodos que una clase debe implementar, sin especificar cómo deben hacerlo.
+
+Puede compararse con el panel de controles de un auto: los botones y palancas disponibles para el conductor.
+
+El conductor:
+
+- No necesita conocer el funcionamiento interno.
+- Solo utiliza los controles disponibles.
+
+En programación:
+
+- La interfaz define qué métodos están disponibles.
+- La implementación concreta define cómo funcionan.
+
+Un buen ejemplo es `List`. Tiene varias implementaciones, como `ArrayList` y `LinkedList`. Uno ocupa los métodos definidos por la interfaz `List`, aunque no sepa exactamente cómo funciona cada implementación internamente.
+
+También podrías crear tu propia clase `Lista` e implementar la interfaz `List`, definiendo sus mecanismos con tu propia lógica.
+
+### El contrato
+
+Las interfaces deben incluir un mensaje claro que indique qué hacen los métodos definidos. Ese mensaje constituye el **contrato**.
+
+El contrato especifica:
+
+- Qué hace el método.
+- Qué parámetros recibe.
+- Qué valor retorna.
+- Qué excepciones puede lanzar.
+
+En Java, el contrato suele documentarse con Javadoc:
+
+- `@param`: qué parámetros recibe el método.
+- `@throws`: qué excepciones lanza el método.
+- `@return`: qué devuelve el método.
+- `@author`: quién es el autor.
+
+El cliente conoce qué hace el método, pero no cómo lo hace.
+
+### Principios SOLID
+
+Los principios **SOLID** proporcionan lineamientos para diseñar software mantenible y escalable.
+
+Su correcta aplicación permite:
+
+- Evitar clases excesivamente grandes.
+- Reducir dependencias innecesarias.
+- Facilitar modificaciones futuras.
+- Mejorar la legibilidad del código.
+
+No es imprescindible memorizar cada principio, sino comprender su finalidad: organizar responsabilidades y minimizar el acoplamiento.
+
+### Arquitectura App / Sistema / SistemaImpl
+
+#### App
+
+Es el cliente.
+
+Por cliente se entiende una entidad que solicita servicios y recibe resultados, pero no implementa la lógica interna. Por eso se denomina cliente: pide cosas concretas sin necesitar entender cómo se le dan.
+
+Desde la `App`:
+
+- Se realizan solicitudes.
+- Se muestran resultados por pantalla.
+- Se gestiona la interacción con el usuario.
+
+La `App` no contiene lógica de implementación, porque el cliente no hace las cosas: las pide y las recibe.
+
+#### Sistema
+
+Define qué puede solicitar el cliente.
+
+Actúa como el panel de botones disponible para la `App`.
+
+Generalmente retorna `String` para que la `App` los imprima. La `App` solo puede ver la interfaz, no la implementación concreta.
+
+#### SistemaImpl
+
+Implementa la lógica real de cada método definido en `Sistema`.
+
+Aquí se encuentran:
+
+- Métodos privados.
+- Algoritmos internos.
+- Reglas de negocio.
+
+Puede haber distintas implementaciones de `Sistema` según la lógica requerida. Este diseño permite cambiar la implementación sin modificar la `App`.
+
+### Patrones de diseño explicados simple
+
+#### Factory
+
+El patrón **Factory** delega la responsabilidad de creación de objetos a una clase especializada, en lugar de realizar la creación directamente en `Sistema`.
+
+Factory puede implementarse como clase o como interfaz, dependiendo de las necesidades del problema. Sin embargo, es recomendable implementarlo como interfaz cuando se quiere definir correctamente su contrato.
+
+Esto permite:
+
+- Centralizar la lógica de creación.
+- Reducir dependencias directas.
+- Facilitar cambios futuros en la construcción de objetos.
+
+#### Singleton
+
+El patrón **Singleton** se utiliza cuando una clase debe tener una única instancia durante la ejecución del programa.
+
+Por ejemplo, si una fábrica crea instancias particulares, no tiene sentido crear una fábrica nueva para cada objeto. Una sola fábrica puede crear todas las instancias.
+
+Generalmente se usa para `SistemaImpl`, ya que rara vez se requiere más de una implementación activa del `Sistema`.
+
+#### Visitor
+
+Se utiliza **Visitor** cuando se requiere aplicar operaciones distintas según el tipo concreto de objeto dentro de una jerarquía de clases.
+
+Visitor se implementa como interfaz, pues define los métodos del visitante, y sus implementaciones concretas se realizan como clases.
+
+Por ejemplo, distinguir entre Auto, Camioneta y SUV para aplicar una lógica distinta a cada uno.
+
+Es útil cuando el problema exige diferenciar el comportamiento según el tipo de instancia.
+
+#### Strategy
+
+Se utiliza **Strategy** cuando se necesita cambiar el comportamiento de una instancia específica en tiempo de ejecución.
+
+Strategy se implementa como interfaz. La instancia cambia su comportamiento según la estrategia concreta que se le asigna.
+
+Por ejemplo, asignar un modo de manejo distinto a un vehículo.
+
+Permite que un mismo objeto cambie su algoritmo o forma de operar sin modificar su clase.
+
+#### Diferencia entre Visitor y Strategy
+
+- Si el comportamiento cambia para la **misma instancia**, se utiliza **Strategy**.
+- Si la lógica cambia según el **tipo concreto de clase**, se utiliza **Visitor**.
+- Si el problema requiere ambas condiciones, es posible combinar ambos patrones.
+
 ## Secuencia conceptual recomendada
 
 1. Abstraer el problema.
@@ -210,3 +451,82 @@ Las pruebas de GUI trabajan con ventanas, paneles, botones, listeners, layouts e
 7. Definir interfaces y contratos.
 8. Ordenar el sistema mediante capas.
 9. Aplicar patrones de diseño cuando resuelvan una necesidad real del problema.
+
+## Nota sobre niveles de abstracción
+
+Los conceptos de Programación Orientada a Objetos no deben entenderse como elementos fijos, mecánicos e inamovibles. Son herramientas de interpretación para representar elementos complejos, relacionados entre sí y observados desde distintos niveles de abstracción.
+
+Una buena forma de entender la progresión de los cursos es mirarlos como una escala: cada nivel exige pensar menos en líneas sueltas de código y más en modelos, estructuras, componentes y arquitectura.
+
+### Nivel 0: programación estructurada
+
+En el primer nivel, la abstracción es nula o muy baja. Se trabaja principalmente con instrucciones, variables, condiciones, ciclos, funciones y algoritmos concretos.
+
+La lógica dominante es lineal:
+
+```text
+input -> proceso 1 -> proceso 2 -> proceso 3 -> output
+```
+
+Aquí el foco está en memorizar, entender y aplicar líneas de código. Se aprende a transformar una entrada en una salida siguiendo una secuencia de pasos. Es una base necesaria, pero todavía se piensa muy cerca del código mismo.
+
+Repositorio asociado:
+
+[NicoCG32/Programacion-UCN](https://github.com/NicoCG32/Programacion-UCN)
+
+### Nivel 1: dominio, clases y componentes básicos
+
+En Programación Orientada a Objetos y Técnicas y Metodologías de Programación Avanzada aparece el primer salto real de abstracción.
+
+Ya no basta con pensar solo en el código. Pensar únicamente en líneas, instrucciones y algoritmos te mantiene en el nivel anterior. En POO debes pensar primero en el **modelo que responde al problema**. Ese modelo se conoce como **dominio**.
+
+Las clases no aparecen mágicamente ni existen como verdades absolutas: son abstracciones que tú construyes al interpretar el problema. Una clase representa una decisión de diseño. Decides qué entidad existe, qué atributos importan, qué comportamiento le corresponde y cómo se relaciona con las demás.
+
+En Técnicas y Metodologías también empieza a aparecer una abstracción distinta: los **contenedores**. Al trabajar con una `LinkedList`, un árbol o una estructura similar, ya no piensas en una sola clase aislada. Piensas en una organización de clases que colaboran para formar un componente básico. Por ejemplo, una lista enlazada puede requerir nodos, referencias, operaciones de inserción, eliminación y recorrido; todo eso funciona como una unidad conceptual.
+
+Al final de este nivel aparece una primera pincelada de arquitectura mediante la separación:
+
+```text
+App -> Sistema (interface) -> SistemaImpl
+```
+
+Esa separación no es todavía arquitectura avanzada, pero sí enseña una idea importante: organizar responsabilidades y evitar que todo el programa viva en una sola clase.
+
+Repositorios asociados:
+
+[NicoCG32/Programacion-Orientada-a-Objetos-UCN](https://github.com/NicoCG32/Programacion-Orientada-a-Objetos-UCN)
+
+[NicoCG32/Tecnicas-y-Metodologias-de-Programacion-Avanzada-UCN](https://github.com/NicoCG32/Tecnicas-y-Metodologias-de-Programacion-Avanzada-UCN)
+
+### Nivel 2: estructuras de datos
+
+En Estructura de Datos se profundiza la aplicación de contenedores.
+
+Aquí las estructuras dejan de ser solo ejercicios puntuales y pasan a verse como herramientas generales para resolver problemas más complejos. Listas, pilas, colas, árboles, grafos, tablas hash u otras estructuras permiten organizar información de forma más inteligente, para luego aplicar algoritmos sobre ellas.
+
+Este nivel exige pensar más allá del dato individual. Se empieza a pensar en cómo los datos se conectan, cómo se recorren, cómo se insertan, cómo se eliminan y qué costo tiene cada operación.
+
+Repositorio asociado:
+
+[NicoCG32/Estructura-de-Datos-UCN](https://github.com/NicoCG32/Estructura-de-Datos-UCN)
+
+### Nivel 3: componentes y arquitectura
+
+En Patrones de Software y Programación el foco sube nuevamente.
+
+Ya no se piensa solo en dominio, clases concretas o estructuras individuales. Se empieza a pensar en **componentes**: grupos de clases que colaboran para cumplir una responsabilidad mayor. Esos componentes se componen, se comunican, se aíslan y se ordenan para formar una arquitectura de software.
+
+En este nivel, los patrones ayudan a modelar soluciones reutilizables para problemas comunes de diseño. No son recetas rígidas, sino formas de organizar componentes, dependencias y responsabilidades de manera más limpia.
+
+Repositorio asociado:
+
+[NicoCG32/Patrones-de-Software-y-Programacion-UCN](https://github.com/NicoCG32/Patrones-de-Software-y-Programacion-UCN)
+
+### Resumen de la progresión
+
+| Nivel | Curso o enfoque | Forma principal de pensar |
+| --- | --- | --- |
+| 0 | Programación | Líneas de código, pasos, instrucciones y algoritmos directos. |
+| 1 | POO / Técnicas y Metodologías | Dominio, clases, objetos, relaciones y componentes básicos. |
+| 2 | Estructura de Datos | Contenedores, organización de datos y algoritmos más complejos. |
+| 3 | Patrones de Software y Programación | Componentes, composición de clases y arquitectura de software. |
