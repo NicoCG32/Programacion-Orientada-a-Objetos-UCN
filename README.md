@@ -1,13 +1,25 @@
 # Programación Orientada a Objetos - UCN
 
+![Java](https://img.shields.io/badge/Java-17%20%7C%2021-ED8B00?logo=openjdk&logoColor=white)
+![Eclipse](https://img.shields.io/badge/IDE-Eclipse-2C2255?logo=eclipseide&logoColor=white)
+![Swing](https://img.shields.io/badge/GUI-Swing-0B6DB0)
+![Nivel](https://img.shields.io/badge/Nivel-1%20Modelado%20POO-blue)
+
 Repositorio de enunciados, archivos de entrada, soluciones y documentación de apoyo para el curso **Programación Orientada a Objetos** de la Universidad Católica del Norte.
 
 Este repositorio fue separado desde el repositorio monolítico original para dejar el material de POO en una unidad autónoma. El foco del curso está en modelar problemas mediante clases, objetos, relaciones, interfaces, arquitectura por capas y patrones de diseño aplicados en Java.
+
+## Entorno del curso
+
+El curso se desarrolla en **Java**, normalmente usando **Eclipse** como IDE. La versión exacta de Java no suele ser crítica para este material; Java 17 o Java 21 son opciones razonables mientras el proyecto compile correctamente.
+
+Lo importante es que el entorno tenga soporte para **Swing**, porque varias evaluaciones de la segunda parte del curso trabajan interfaces gráficas, eventos, ventanas, botones, paneles y separación entre interfaz y lógica de dominio.
 
 ## Estructura
 
 ```text
 Programacion-Orientada-a-Objetos-UCN/
+├── Ayudantías/
 ├── PRUEBA 1/
 ├── PRUEBA 2/
 └── RECA/
@@ -40,6 +52,12 @@ Cada evaluación puede contener:
 | [Prueba 1 - 2023 S2](PRUEBA%201/2023%20S2/Solución/) | Implementación de ruteo y sistema Gestión UCN. | Completar o profundizar la documentación del ruteo y validaciones finales. |
 
 ## Evaluaciones
+
+### Ayudantías
+
+| Material | Estado | Contenido principal |
+| --- | --- | --- |
+| [PRE PRUEBA 2](<Ayudantías/PRE PRUEBA 2/README.md>) | Enunciado y datos disponibles | Preparación para Prueba 2, modelado de dominio, lectura de archivos y diseño de sistema en Java. |
 
 ### Prueba 1
 
