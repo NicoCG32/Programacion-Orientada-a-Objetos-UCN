@@ -1,8 +1,8 @@
 # Explicación Detallada - Prueba 2 POO 2024 S2
 
-**Asignatura**: Programación Orientada a Objetos  
-**Período**: 2024 Semestre 2  
-**Fecha**: 28/11/2024  
+**Asignatura**: Programación Orientada a Objetos
+**Período**: 2024 Semestre 2
+**Fecha**: 28/11/2024
 **Profesores**: Alejandro Paolini, Moisés Moraga
 
 ---
@@ -37,11 +37,7 @@ Dependiendo del cuarto dígito del RUT, la interfaz se verá así:
 
 Detalle completo en [Respuestas.md](src/RuteoGUI/Respuestas.md).
 
-**¿Al presionar qué botón aparece un mensaje por la pantalla?**
-
-Ningún botón muestra un mensaje por pantalla al ser presionado. En el código de `Main.java`, los botones se crean y agregan al panel, pero no tienen ningún `ActionListener` ni lógica asociada para mostrar mensajes. Por lo tanto, al presionar cualquier botón, no ocurre ninguna acción visible.
-
-**¿Qué sucede al presionar el botón “X” de la ventana principal de su aplicación?**
+**¿Al presionar qué botón aparece un mensaje por la pantalla?** Ningún botón muestra un mensaje por pantalla al ser presionado. En el código de `Main.java`, los botones se crean y agregan al panel, pero no tienen ningún `ActionListener` ni lógica asociada para mostrar mensajes. Por lo tanto, al presionar cualquier botón, no ocurre ninguna acción visible. **¿Qué sucede al presionar el botón “X” de la ventana principal de su aplicación?**
 
 Al presionar el botón “X” (cerrar ventana), la aplicación termina inmediatamente. Esto se debe a que en el código se configura:
 
@@ -56,8 +52,8 @@ El ejercicio consiste en realizar el ruteo de código de una aplicación Swing q
 1. Solicita al usuario ingresar su RUT
 2. Extrae el cuarto dígito del RUT (de derecha a izquierda, antes del dígito verificador)
 3. Crea una ventana con 5 botones cuyo layout depende del cuarto dígito:
-   - **Dígitos 0-5**: Layout horizontal (botones en fila)
-   - **Dígitos 6-9**: Layout vertical (botones en columna)
+ - **Dígitos 0-5**: Layout horizontal (botones en fila)
+ - **Dígitos 6-9**: Layout vertical (botones en columna)
 
 ### Análisis del Código
 
@@ -115,20 +111,20 @@ Implementa layout vertical usando `BoxLayout.Y_AXIS`. Crea un panel con 5 botone
 #### 2. **Strategy** (LayoutStrategy)
 - **Propósito**: Encapsular algoritmos de layout intercambiables
 - **Participantes**:
-  - **Contexto**: `Configurator`
-  - **Estrategia**: `LayoutStrategy` (interface)
-  - **Estrategias concretas**: `HorizontalLayoutStrategy`, `VerticalLayoutStrategy`
+ - **Contexto**: `Configurator`
+ - **Estrategia**: `LayoutStrategy` (interface)
+ - **Estrategias concretas**: `HorizontalLayoutStrategy`, `VerticalLayoutStrategy`
 - **Beneficio**: Facilita agregar nuevos tipos de layout sin modificar el configurador
 
 ### Componentes Swing Utilizados
 
-| Componente | Uso                                         |
+| Componente | Uso |
 |------------|---------------------------------------------|
-| `JFrame`   | Ventana principal (400x400 px)              |
-| `JPanel`   | Contenedor de botones                       |
-| `JButton`  | 5 botones numerados ("Botón 1" a "Botón 5") |
-| `BoxLayout`| Layout manager (X_AXIS o Y_AXIS)            |
-| `Scanner`  | Lectura del RUT por consola                 |
+| `JFrame` | Ventana principal (400x400 px) |
+| `JPanel` | Contenedor de botones |
+| `JButton` | 5 botones numerados ("Botón 1" a "Botón 5") |
+| `BoxLayout`| Layout manager (X_AXIS o Y_AXIS) |
+| `Scanner` | Lectura del RUT por consola |
 
 ### Flujo de Ejecución
 
@@ -136,8 +132,8 @@ Implementa layout vertical usando `BoxLayout.Y_AXIS`. Crea un panel con 5 botone
 2. Se solicita el RUT al usuario
 3. Se extrae el cuarto dígito: `rut.charAt(rut.length() - 5)`
 4. Se selecciona la estrategia según el dígito:
-   - 0-5 → `HorizontalLayoutStrategy`
-   - 6-9 → `VerticalLayoutStrategy`
+ - 0-5 → `HorizontalLayoutStrategy`
+ - 6-9 → `VerticalLayoutStrategy`
 5. Se crea el `JFrame` y se aplica el layout
 6. Se muestra la ventana con los botones
 
@@ -150,19 +146,19 @@ Implementa layout vertical usando `BoxLayout.Y_AXIS`. Crea un panel con 5 botone
 Sistema de gestión de flota de vehículos para una empresa de arriendo. Debe:
 
 1. **Cargar información** desde `fleet.txt`:
-   - Datos de vehículos (VIN, marca, modelo, tipo, eficiencia)
-   - Registros de uso (VIN, modo de manejo, distancias)
+ - Datos de vehículos (VIN, marca, modelo, tipo, eficiencia)
+ - Registros de uso (VIN, modo de manejo, distancias)
 
 2. **Calcular métricas**:
-   - Kilometraje total por vehículo
-   - Consumo de combustible según modo de manejo
-   - Vehículo con mayor consumo por categoría
+ - Kilometraje total por vehículo
+ - Consumo de combustible según modo de manejo
+ - Vehículo con mayor consumo por categoría
 
 3. **Requisitos técnicos**:
-   - Patrones: Visitor + Strategy + (Singleton O Factory)
-   - Arquitectura de 3 capas
-   - Herencia obligatoria
-   - Sin ciclos anidados
+ - Patrones: Visitor + Strategy + (Singleton O Factory)
+ - Arquitectura de 3 capas
+ - Herencia obligatoria
+ - Sin ciclos anidados
 
 ### Patrones de diseño implementados
 
@@ -196,26 +192,23 @@ double calcularConsumo(double eficiencia, int distancia)
 
 **Estrategias concretas:**
 
-| Modo   | Código | Ajuste en esta solución | Implementación          |
+| Modo | Código | Ajuste en esta solución | Implementación |
 |--------|--------|-------------------------|-------------------------|
-| Eco    | "E"    | Reduce consumo 10%      | `eficiencia * 1.111111` |
-| Normal | "N"    | Sin cambio              | `eficiencia * 1.0`      |
-| Sport  | "S"    | Aumenta consumo 25%     | `eficiencia * 0.8`      |
+| Eco | "E" | Reduce consumo 10% | `eficiencia * 1.111111` |
+| Normal | "N" | Sin cambio | `eficiencia * 1.0` |
+| Sport | "S" | Aumenta consumo 25% | `eficiencia * 0.8` |
 
 **Nota (detalle de la conversión):** El enunciado habla de eficiencia, pero el sistema calcula consumo con la fórmula
 `consumo = distancia / eficiencia`. Por eso se ajusta la eficiencia y luego se aplica la misma fórmula.
 
 - **Eco (eficiencia -10%)**: eficiencia_eco = 0.9 * eficiencia. Entonces
-   `consumo = distancia / (0.9 * eficiencia)`, que es equivalente a dividir por 0.9, o multiplicar por 1.111111.
+ `consumo = distancia / (0.9 * eficiencia)`, que es equivalente a dividir por 0.9, o multiplicar por 1.111111.
 - **Sport (eficiencia +25%)**: eficiencia_sport = 1.25 * eficiencia. Entonces
-   `consumo = distancia / (1.25 * eficiencia)`, que es equivalente a dividir por 1.25, o multiplicar por 0.8.
+ `consumo = distancia / (1.25 * eficiencia)`, que es equivalente a dividir por 1.25, o multiplicar por 0.8.
 
 Así, los factores `1.111111` y `0.8` son equivalencias matemáticas para reflejar el mismo cambio en consumo final.
 
-**Implementación con Singleton:**
-Cada modo de manejo es un Singleton (ej: `ModoEco.getModoEco()`) para evitar múltiples instancias idénticas.
-
-**Beneficio**: Permite agregar nuevos modos sin modificar la clase `Vehiculo`.
+**Implementación con Singleton:** Cada modo de manejo es un Singleton (ej: `ModoEco.getModoEco()`) para evitar múltiples instancias idénticas. **Beneficio**: Permite agregar nuevos modos sin modificar la clase `Vehiculo`.
 
 #### 3. **Visitor** (VisitorMayorConsumo)
 
@@ -229,9 +222,7 @@ void visit(Auto v);
 String ShowInfo();
 ```
 
-**Clase `VisitorMayorConsumo`:**
-
-**Atributos:**
+**Clase `VisitorMayorConsumo`:** **Atributos:**
 - `SConsumo`, `CConsumo`, `AConsumo`: Referencias a vehículos con mayor consumo
 - `SuvConsumoMayor`, `CamionetaConsumoMayor`, `AutoConsumoMayor`: Valores máximos
 
@@ -284,9 +275,7 @@ La fórmula base es:
 Consumo (litros) = Distancia (km) / Eficiencia (km/litro)
 ```
 
-**Aplicación de modos de manejo:**
-
-1. **Modo Eco** (reduce consumo 10%):
+**Aplicación de modos de manejo:** 1. **Modo Eco** (reduce consumo 10%):
    ```
    eficiencia_ajustada = eficiencia * 1.111 (1/0.9)
    ```
@@ -321,9 +310,7 @@ VIN,modo,distancia1,distancia2,...
 VIN,modo,distancia1,distancia2,...
 ```
 
-**Lógica de carga en `App.java`:**
-
-1. **Primera sección** (vehículos):
+**Lógica de carga en `App.java`:** 1. **Primera sección** (vehículos):
    ```java
    int valor = Integer.valueOf(lector.nextLine());
    for (int i = 0; i < valor; i++) {
@@ -426,9 +413,7 @@ Además, el diseño de esta solución sigue los principios SOLID:
 - **O (Open/Closed):** El sistema es abierto a extensión (puedes agregar nuevos modos de manejo, tipos de vehículos, etc.) pero cerrado a modificación (no necesitas cambiar el código existente para nuevas funcionalidades).
 - **L (Liskov Substitution):** Las subclases y las implementaciones de interfaces pueden ser usadas donde se espera la superclase/interfaz, sin alterar la lógica del programa.
 - **I (Interface Segregation):** Las interfaces son específicas y no fuerzan a implementar métodos innecesarios. Por ejemplo, `Strategy` y `Visitor` definen contratos claros y acotados.
-- **D (Dependency Inversion):** El código depende de abstracciones (interfaces) y no de implementaciones concretas. Por ejemplo, `SistemaImpl` recibe una `IVehiculoFactory`.
-
-**Beneficios de este enfoque:**
+- **D (Dependency Inversion):** El código depende de abstracciones (interfaces) y no de implementaciones concretas. Por ejemplo, `SistemaImpl` recibe una `IVehiculoFactory`. **Beneficios de este enfoque:**
 - Facilita el mantenimiento y la extensión del sistema.
 - Permite pruebas unitarias más simples (puedes usar mocks de interfaces).
 - Reduce el acoplamiento y mejora la reutilización de código.
@@ -439,10 +424,10 @@ Además, el diseño de esta solución sigue los principios SOLID:
 ## Conclusión
 
 Esta solución demuestra:
-- ✅ Uso correcto de patrones de diseño (Visitor, Strategy, Factory, Singleton)
-- ✅ Arquitectura en capas con separación de responsabilidades
-- ✅ Herencia y polimorfismo en jerarquía de vehículos
-- ✅ Programación orientada a objetos con bajo acoplamiento
-- ✅ Código mantenible y extensible
+- Uso correcto de patrones de diseño (Visitor, Strategy, Factory, Singleton)
+- Arquitectura en capas con separación de responsabilidades
+- Herencia y polimorfismo en jerarquía de vehículos
+- Programación orientada a objetos con bajo acoplamiento
+- Código mantenible y extensible
 
 **Estado**: Implementación completa, documentación completa.

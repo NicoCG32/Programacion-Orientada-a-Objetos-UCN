@@ -1,8 +1,8 @@
 # Explicación Detallada - Prueba 2 POO 2024 S1
 
-**Asignatura**: Programación Orientada a Objetos  
-**Período**: 2024 Semestre 1  
-**Fecha**: 22/06/2024  
+**Asignatura**: Programación Orientada a Objetos
+**Período**: 2024 Semestre 1
+**Fecha**: 22/06/2024
 **Profesores**: Alejandro Paolini, Moisés Moraga, Eric Ross
 
 ---
@@ -38,9 +38,7 @@ Dependiendo de la configuración, la interfaz se verá así:
 
 Detalle completo en [Respuestas.md](src/RuteoGUI/Respuestas.md).
 
-**¿Al presionar qué botón aparece un mensaje por la pantalla?**
-
-El mensaje aparece al presionar el último botón creado, que es **B5**. En `Main.java`, el `ActionListener` se agrega después del `for`, por lo que queda asociado al último botón instanciado.
+**¿Al presionar qué botón aparece un mensaje por la pantalla?** El mensaje aparece al presionar el último botón creado, que es **B5**. En `Main.java`, el `ActionListener` se agrega después del `for`, por lo que queda asociado al último botón instanciado.
 
 **¿Qué sucede al presionar el botón "X" de la ventana principal de su aplicación?**
 
@@ -129,7 +127,7 @@ Cada subclase agrega su atributo específico (cicatrices, planta favorita, dista
 
 #### Diagrama de clases
 
-El diagrama de clases se encuentra en el archivo [diagrama_clases.puml](diagrama_clases.puml). Resume la jerarquía de `Dinosaurio`, el contrato `DinoVisitor` y la separación por paquetes (Dominio, Factory, Lógica, Visitor).
+El diagrama de clases se encuentra en el archivo [DiagramaDeClases.png](src/NewJurassicWorld/DiagramaDeClases.png). Resume la jerarquía de `Dinosaurio`, el contrato `DinoVisitor` y la separación por paquetes (Dominio, Factory, Lógica, Visitor).
 
 ### Patrones de diseño implementados
 
@@ -247,9 +245,9 @@ El formato de salida está alineado con [ejemplo.txt](../ejemplo.txt).
 ## Conclusión
 
 Esta solución implementa:
-- ✅ Ruteo GUI con Factory
-- ✅ Jerarquía de clases y herencia
-- ✅ Visitor para los reportes
-- ✅ Arquitectura con `Sistema` y lista única de dinosaurios
+- Ruteo GUI con Factory
+- Jerarquía de clases y herencia
+- Visitor para los reportes
+- Arquitectura con `Sistema` y lista única de dinosaurios
 
 **Estado**: Implementación completa, documentación completa.

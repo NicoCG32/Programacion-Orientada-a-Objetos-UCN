@@ -12,4 +12,4 @@
 
 ## Documentación
 
-- Explicación detallada: [EXPLICACION.md](EXPLICACION.md).
+- Explicación detallada: [EXPLICACIÓN.md](EXPLICACIÓN.md).

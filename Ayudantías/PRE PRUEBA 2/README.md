@@ -6,7 +6,7 @@ Material de preparación para la segunda prueba de **Programación Orientada a O
 
 | Archivo | Descripción |
 | --- | --- |
-| [Kimbo_s Street Fights.pdf](<Kimbo_s Street Fights.pdf>) | Enunciado de preparación. |
+| [Kimbo's Street Fights.pdf](<Kimbo's Street Fights.pdf>) | Enunciado de preparación. |
 | [peleadores.txt](<peleadores.txt>) | Archivo de entrada para el problema. |
 
 ## Conceptos esperados

@@ -6,7 +6,7 @@ Documentar la solución del Problema 2 (Gestión UCN), basada en el menú y la l
 
 ## Ejercicio 1: Ruteo
 
-⚠️ **Explicación en proceso**
+**Explicación en proceso**
 
 El ruteo del Problema 1 está implementado en [src/Ruteo/Main.java](src/Ruteo/Main.java). La explicación detallada de la ejecución paso a paso, diagramas de objetos y análisis de variables estáticas estará disponible próximamente.
 
@@ -14,7 +14,7 @@ El ruteo del Problema 1 está implementado en [src/Ruteo/Main.java](src/Ruteo/Ma
 
 ### Modelo de dominio
 
-![Modelo de Dominio - Gestión UCN](src/GestionUCN/DiagramaModeloDominio.png)
+![Modelo de Dominio - Gestión UCN](src/GestionUCN/ModeloDeDominio.png)
 
 El modelo de dominio simplificado muestra las entidades principales y sus relaciones:
 - `Persona` y `Unidad` se relacionan a través de `Contrato`

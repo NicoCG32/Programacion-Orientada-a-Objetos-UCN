@@ -27,12 +27,12 @@ Programacion-Orientada-a-Objetos-UCN/
 
 Cada evaluación puede contener:
 
-- `PRUEBA.pdf` o `Prueba - Parte 1/2.pdf`: enunciado de la evaluación.
+- `PRUEBA.pdf` o bien `PRUEBA - PARTE 1.pdf` y `PRUEBA - PARTE 2.pdf`: enunciado de la evaluación.
 - Archivos `.txt`: datos de entrada usados por la solución.
 - `Solución/`: implementación Java y documentación local.
 - `Solución/src/`: código fuente.
 - `Solución/README.md`: ficha breve con estado, tipo de ejercicios y referencia a la explicación.
-- `Solución/EXPLICACION.md` o `EXPLICACIÓN.MD`: desarrollo conceptual y técnico, cuando existe.
+- `Solución/EXPLICACIÓN.md`: desarrollo conceptual y técnico, cuando existe.
 
 ## Soluciones implementadas
 
@@ -49,6 +49,7 @@ Cada evaluación puede contener:
 
 | Evaluación | Avance disponible | Pendiente principal |
 | --- | --- | --- |
+| [Prueba 2 - 2025 S1](PRUEBA%202/2025%20S1/Solución/) | Sistema Del West implementado y documentado; ruteo GUI implementado. | Documentar el ruteo GUI paso a paso y su estado final. |
 | [Prueba 1 - 2023 S2](PRUEBA%201/2023%20S2/Solución/) | Implementación de ruteo y sistema Gestión UCN. | Completar o profundizar la documentación del ruteo y validaciones finales. |
 
 ## Evaluaciones
@@ -76,6 +77,7 @@ Cada evaluación puede contener:
 
 | Periodo | Estado | Contenido principal |
 | --- | --- | --- |
+| [2025 S1](PRUEBA%202/2025%20S1/) | Implementación completa, documentación parcial | Ruteo GUI con Strategy pendiente de documentación detallada; sistema Del West con archivos, cambios de recorrido, ingresos y kilometraje. |
 | [2024 S2](PRUEBA%202/2024%20S2/) | Completa | Ruteo GUI dinámico; sistema Rent a Car con Strategy, Visitor y arquitectura por capas. |
 | [2024 S1](PRUEBA%202/2024%20S1/) | Completa | Ruteo GUI dinámico; sistema New Jurassic World con Factory, Visitor y arquitectura por capas. |
 | [2023 S2](PRUEBA%202/2023%20S2/) | Base por implementar | Enunciado, archivos de entrada y estructura de solución. |
@@ -94,7 +96,7 @@ Cada evaluación puede contener:
 2. Identifica las entidades del dominio antes de mirar el código.
 3. Revisa el `README.md` de la carpeta `Solución/`.
 4. Ejecuta el código desde `src/` en Eclipse o en el entorno Java que uses.
-5. Contrasta la implementación con `EXPLICACION.md` cuando exista.
+5. Contrasta la implementación con `EXPLICACIÓN.md` cuando exista.
 
 La idea no es memorizar clases aisladas, sino comprender la transición desde el problema escrito hacia un modelo de objetos coherente.
 
